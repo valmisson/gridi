@@ -1,0 +1,29 @@
+{
+  "name": "flexgrid",
+  "version": "0.0.1",
+  "description": "A minimal grid system created with Flexbox and SCSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valmisson/flexgrid.git"
+  },
+  "keywords": [
+    "css",
+    "sass",
+    "scss",
+    "grid-system",
+    "mobile-first",
+    "responsive",
+    "front-end",
+    "web"
+  ],
+  "author": "Valmisson Grizorte <missongrizorte@gmail.com> (https://valmisson.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/valmisson/flexgrid/issues"
+  },
+  "homepage": "https://github.com/valmisson/flexgrid#readme"
+}
