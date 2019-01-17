@@ -5,7 +5,7 @@
   <br>
 </h1>
 
-<h4 align="center">A minimal grid system created with Flexbox and SCSS.</h4>
+<h4 align="center">:gem: A simple and flexible grid system created with flexbox using scss.</h4>
 
 <p align="center">
   <a href="https://badge.fury.io/js/electron-markdownify">
@@ -20,8 +20,9 @@
 <p align="center">
   <a href="#key-features">Key Features</a> •
   <a href="#how-to-use">How To Use</a> •
-  <a href="#download">Download</a> •
-  <a href="#credits">Contributing</a> •
+  <a href="#example">Example</a> •
+  <a href="#grid-options">Grid options</a> •
+  <a href="#contributing">Contributing</a> •
   <a href="#license">License</a>
 </p>
 
@@ -29,33 +30,44 @@
 
 ## Key Features
 
-* edit me
-  - edit me
+* Powerful grid system made with flexbox and over the mobile-first concept.
+* Create layouts of all shapes and sizes with a 12-column system and five standard responsive levels.
+* Easy to customize and adapt to your layout with scss.
+* Based on the bootstrap 4 grid system
 
 ## How To Use
 
-edit me
-
 ```bash
-# Clone this repository
+# Clone or download this repository
+$ [Download](https://github.com/valmisson/flexgrid/archive/master.zip)
+# or
 $ git clone https://github.com/valmisson/flexgrid.git
-
-# Go into the repository
-$ cd flexgrid
-
-# Install dependencies
-$ npm install
-
-# Run the app
-$ npm start
+# Link the flexgrid.min.css file
+$ <link rel="stylesheet" href="flexgrid.min.css">
 ```
 
-more info here
+## Example
 
+![screenshot](https://cdn1.imggmi.com/uploads/2019/1/18/5b744bc8443ceb9313f69ca2c8700782-full.png)
 
-## Download
+```html
+<div class="container">
+  <div class="row">
+    <div class="col">1 of 3</div>
+    <div class="col">2 of 3</div>
+    <div class="col">3 of 3</div>
+  </div>
+</div>
+```
 
-edit here
+## Grid options
+
+| | Extra small <576px  | Small ≥576px | Medium ≥768px | Large ≥992px | Extra large ≥1200px |
+| --- | --- | --- | --- | --- | --- |
+| Max container width | None (auto) | 540px | 720px | 960px | 1140px      |
+| Class prefix | .col- | .col-sm- | .col-md- | .col-lg- | .col-xl- |
+| Column numbers | 12
+| Gutter width | 30px (15px on each side of a column)
 
 ## Contributing
 Your contributions are always welcome! [Click Here to read the guidelines.](https://github.com/valmisson/flexgrid/blob/master/CONTRIBUTING.md)
