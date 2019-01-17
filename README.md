@@ -1,9 +1,7 @@
 
 <h1 align="center">
   <br>
-  <a href="linkSiteHere"><img src="imgLogoHere" alt="FlexGrid" width="200"></a>
-  <br>
-  FlexGrid
+  <a href="linkSiteHere"><img src="https://cdn1.imggmi.com/uploads/2019/1/17/5fdb0441762f4b6542bf2d1988e8a1a7-full.png" alt="FlexGrid" width="200"></a>
   <br>
 </h1>
 
