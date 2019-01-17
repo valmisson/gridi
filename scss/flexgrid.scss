@@ -1,0 +1,31 @@
+/*
+*   FlexGrid  v1.0.0
+*
+*   A minimal grid system created with Flexbox and SCSS
+*
+*   Create by: Valmisson Grizorte (https://valmisson.com)
+*
+*   Repository (https://github.com/valmisson/flexgrid)
+*   Licensed under MIT (https://github.com/valmisson/flexgrid/blob/master/LICENSE)
+*/
+
+@-ms-viewport {
+  width: device-width;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+@import 'utils/variables';
+@import 'utils/functions';
+
+@import 'mixins/breakpoints';
+@import 'mixins/grid';
+@import 'mixins/grid-framework';

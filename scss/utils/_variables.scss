@@ -1,0 +1,32 @@
+// Variables
+
+//  Grid columns
+//
+//  Set the number of columns and specify the width of the gutters.
+
+$grid-columns: 	12 !default;
+$gutter-width:  30px !default;
+
+//  Grid containers
+//
+//  Define the maximum width of `.container` for different screen sizes.
+
+$container-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+) !default;
+
+//  Grid breakpoints
+//
+//  Define the minimum dimensions at which your layout will change,
+//  adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;

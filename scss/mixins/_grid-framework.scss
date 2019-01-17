@@ -1,0 +1,76 @@
+//  Framework grid generation
+
+.container {
+  @include make-container();
+  @include make-container-responsive();
+}
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+  }
+
+.row {
+  @include make-row();
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.no-gutters > .col,
+.no-gutters > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+%grid-column {
+  min-height: 1px;
+  position: relative;
+  padding-left: $gutter-width / 2;
+  padding-right: $gutter-width / 2;
+  width: 100%;
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  $breakpointName: get-breakpoints-name($breakpoint);
+
+  @for $i from 1 through $grid-columns {
+    .col#{$breakpointName}-#{$i} {
+      @extend %grid-column;
+    }
+  }
+  .col#{$breakpointName},
+  .col#{$breakpointName}-auto {
+    @extend %grid-column;
+  }
+
+  @include breakpoint ($breakpoint) {
+    .col#{$breakpointName} {
+      flex-basis: 0;
+      flex-grow: 1;
+      max-width: 100%;
+    }
+    .col#{$breakpointName}-auto {
+      flex: 0 0 auto;
+      max-width: none; // Reset earlier grid tiers
+      width: auto;
+    }
+
+    @for $i from 1 through $grid-columns {
+      .col#{$breakpointName}-#{$i} {
+        @include make-col($i);
+      }
+    }
+
+    @for $i from 1 through ($grid-columns - 1) {
+      .offset#{$breakpointName}-#{$i} {
+        @include make-col-offset($i);
+      }
+    }
+  }
+}

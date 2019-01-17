@@ -1,0 +1,36 @@
+
+//  Grid System
+//
+//  Generate semantic grid columns with these mixins.
+
+@mixin make-container () {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $gutter-width / 2;
+  padding-right: $gutter-width / 2;
+  width: 100%;
+}
+
+@mixin make-container-responsive ($width: $container-widths, $breakpoints: $grid-breakpoints) {
+  @each $breakpoint, $container-width in $width {
+    @include breakpoint ($breakpoint, $breakpoints) {
+      max-width: $container-width;
+    }
+  }
+}
+
+@mixin make-row () {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: $gutter-width / -2;
+  margin-right: $gutter-width / -2;
+}
+
+@mixin make-col ($size) {
+  flex: 0 0 get-column-porcent($size);
+  max-width: get-column-porcent($size);
+}
+
+@mixin make-col-offset ($size) {
+  margin-left: get-column-porcent($size);
+}

@@ -1,10 +1,13 @@
 {
   "name": "flexgrid",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A minimal grid system created with Flexbox and SCSS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "scss": "node-sass scss/flexgrid.scss ./flexgrid.css --output-style expanded",
+    "minify": "node-sass scss/flexgrid.scss ./flexgrid.min.css --output-style compressed",
+    "prefix": "postcss --replace \"flexgrid.css\" \"flexgrid.min.css\"",
+    "build": "npm run scss & npm run minify & npm run prefix"
   },
   "repository": {
     "type": "git",
@@ -25,5 +28,22 @@
   "bugs": {
     "url": "https://github.com/valmisson/flexgrid/issues"
   },
-  "homepage": "https://github.com/valmisson/flexgrid#readme"
+  "homepage": "https://github.com/valmisson/flexgrid#readme",
+  "browserslist": [
+    "last 1 major version",
+    ">= 1%",
+    "Chrome >= 45",
+    "Firefox >= 38",
+    "Edge >= 12",
+    "Explorer >= 10",
+    "iOS >= 9",
+    "Safari >= 9",
+    "Android >= 4.4",
+    "Opera >= 30"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^9.4.5",
+    "node-sass": "^4.11.0",
+    "postcss-cli": "^6.1.1"
+  }
 }

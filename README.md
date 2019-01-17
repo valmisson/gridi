@@ -27,7 +27,7 @@
   <a href="#license">License</a>
 </p>
 
-![screenshot](screenshot-here)
+![screenshot](https://cdn1.imggmi.com/uploads/2019/1/17/f59cfc38b17561efbdf35da37b296ca8-full.png)
 
 ## Key Features
 
@@ -40,10 +40,10 @@ edit me
 
 ```bash
 # Clone this repository
-$ git clone url of repository here
+$ git clone https://github.com/valmisson/flexgrid.git
 
 # Go into the repository
-$ cd name folder here
+$ cd flexgrid
 
 # Install dependencies
 $ npm install
@@ -60,12 +60,12 @@ more info here
 edit here
 
 ## Contributing
-Your contributions are always welcome! [Click Here to read the guidelines.](url-here)
+Your contributions are always welcome! [Click Here to read the guidelines.](https://github.com/valmisson/flexgrid/blob/master/CONTRIBUTING.md)
 
 
 ## License
 
-MIT
+[MIT](https://github.com/valmisson/flexgrid/blob/master/CONTRIBUTING.md)
 
 ---
 

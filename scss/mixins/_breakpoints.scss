@@ -1,0 +1,19 @@
+//  Generates breakpoint viewport sizes and media queries.
+
+//  Breakpoints are defined as a map of (name: minimum width), order from small to large:
+//  (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px)
+//
+//  The map defined in the `$grid-breakpoints` global variable is used as the `$breakpoints` argument by default.
+
+@mixin breakpoint ($name, $breakpoints: $grid-breakpoints) {
+  $width: get-breakpoints($name, $breakpoints);
+
+  @if $width {
+    @media (min-width: $width) {
+      @content;
+    }
+  }
+  @else {
+    @content;
+  }
+}

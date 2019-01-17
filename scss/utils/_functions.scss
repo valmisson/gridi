@@ -1,0 +1,21 @@
+//  Functions
+
+//  Grid breakpoints
+//
+//  Get the breakpoint size of the global variable map $grid-breakpoints
+
+@function get-breakpoints($name, $breakpoints: $grid-breakpoints) {
+	$point: map-get($breakpoints, $name);
+	@return if($point != 0, $point, null);
+}
+
+
+//  Calculate the size of the columns
+@function get-column-porcent($column-num) {
+	@return ($column-num / $grid-columns) * 100%;
+}
+
+//  Get the names of the breakpoint (xs, sm, md, lg, xl)
+@function get-breakpoints-name($name, $breakpoints: $grid-breakpoints) {
+	@return if(get-breakpoints($name, $breakpoints) == null, "", "-#{$name}");
+}
