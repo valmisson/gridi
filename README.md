@@ -63,7 +63,7 @@ Your contributions are always welcome! [Click Here to read the guidelines.](http
 
 ## License
 
-[MIT](https://github.com/valmisson/flexgrid/blob/master/CONTRIBUTING.md)
+[MIT](https://github.com/valmisson/flexgrid/blob/master/LICENSE)
 
 ---
 
