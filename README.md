@@ -39,7 +39,7 @@
 
 ```bash
 # Clone or download this repository
-$ [Download](https://github.com/valmisson/flexgrid/archive/master.zip)
+$ Download this repository
 # or
 $ git clone https://github.com/valmisson/flexgrid.git
 # Link the flexgrid.min.css file
