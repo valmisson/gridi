@@ -5,7 +5,7 @@
   <br>
 </h1>
 
-<h4 align="center">:gem: A simple and flexible grid system created with flexbox using scss.</h4>
+<h4 align="center">A simple and flexible grid system created with flexbox using scss.</h4>
 
 <p align="center">
   <a href="https://badge.fury.io/js/electron-markdownify">
