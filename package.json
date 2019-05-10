@@ -1,6 +1,6 @@
 {
   "name": "flexgrid",
-  "version": "1.0.0",
+   "version": "1.0.0",
   "description": "A minimal grid system created with Flexbox and SCSS",
   "main": "index.js",
   "scripts": {
@@ -35,7 +35,7 @@
     "Chrome >= 45",
     "Firefox >= 38",
     "Edge >= 12",
-    "Explorer >= 10",
+    "Explorer >= 10" ,
     "iOS >= 9",
     "Safari >= 9",
     "Android >= 4.4",
