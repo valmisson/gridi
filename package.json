@@ -1,8 +1,7 @@
 {
   "name": "flexgrid",
   "version": "1.0.0",
-  "description": "A minimal grid system created with Flexbox and SCSS",
-  "main": "index.js",
+  "description": "A simple and flexible grid system created with flexbox using scss",
   "scripts": {
     "scss": "node-sass scss/flexgrid.scss ./flexgrid.css --output-style expanded",
     "minify": "node-sass scss/flexgrid.scss ./flexgrid.min.css --output-style compressed",
@@ -42,8 +41,8 @@
     "Opera >= 30"
   ],
   "devDependencies": {
-    "autoprefixer": "^9.4.5",
-    "node-sass": "^4.11.0",
-    "postcss-cli": "^6.1.1"
+    "autoprefixer": "^9.5.1",
+    "node-sass": "^4.12.0",
+    "postcss-cli": "^6.1.2"
   }
 }
