@@ -1,7 +1,7 @@
 
 <h1 align="center">
   <br>
-  <a href="linkSiteHere"><img src="https://cdn1.imggmi.com/uploads/2019/1/17/5fdb0441762f4b6542bf2d1988e8a1a7-full.png" alt="FlexGrid" width="200"></a>
+  FlexGrid
   <br>
 </h1>
 
@@ -15,8 +15,6 @@
   <a href="#contributing">Contributing</a> •
   <a href="#license">License</a>
 </p>
-
-![screenshot](https://cdn1.imggmi.com/uploads/2019/1/17/f59cfc38b17561efbdf35da37b296ca8-full.png)
 
 ## Key Features
 
@@ -32,13 +30,12 @@
 $ Download this repository
 # or
 $ git clone https://github.com/valmisson/flexgrid.git
+
 # Link the flexgrid.min.css file
 $ <link rel="stylesheet" href="flexgrid.min.css">
 ```
 
 ## Example
-
-![screenshot](https://cdn1.imggmi.com/uploads/2019/1/18/5b744bc8443ceb9313f69ca2c8700782-full.png)
 
 ```html
 <div class="container">
