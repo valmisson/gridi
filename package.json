@@ -41,8 +41,9 @@
     "Opera >= 30"
   ],
   "devDependencies": {
-    "autoprefixer": "^9.8.4",
-    "node-sass": "^4.14.1",
-    "postcss-cli": "^7.1.1"
+    "autoprefixer": "9.8.6",
+    "node-sass": "^5.0.0",
+    "postcss": "^8.2.4",
+    "postcss-cli": "^8.3.1"
   }
 }
