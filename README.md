@@ -1,39 +1,26 @@
+# Gridi
 
-<h1 align="center">
-  <br>
-  FlexGrid
-  <br>
-</h1>
+A simple and flexible grid system created with flexbox using scss.
 
-<h4 align="center">A simple and flexible grid system created with flexbox using scss.</h4>
+[![npm][npm-shields]][npm-package]
+[![license][license-shields]][license-file]
 
-<p align="center">
-  <a href="#key-features">Key Features</a> •
-  <a href="#how-to-use">How To Use</a> •
-  <a href="#example">Example</a> •
-  <a href="#grid-options">Grid options</a> •
-  <a href="#contributing">Contributing</a> •
-  <a href="#license">License</a>
-</p>
 
-## Key Features
+## Features
 
 * Powerful grid system made with flexbox and over the mobile-first concept.
 * Create layouts of all shapes and sizes with a 12-column system and five standard responsive levels.
 * Easy to customize and adapt to your layout with scss.
 * Based on the bootstrap 4 grid system
 
-## How To Use
+## Install
 
-```bash
-# Clone or download this repository
-$ Download this repository
-# or
-$ git clone https://github.com/valmisson/flexgrid.git
-
-# Link the flexgrid.min.css file
-$ <link rel="stylesheet" href="flexgrid.min.css">
+```sh
+yarn add gridi
 ```
+
+Or [download this repository][download-zip]
+
 
 ## Example
 
@@ -53,13 +40,21 @@ $ <link rel="stylesheet" href="flexgrid.min.css">
 | --- | --- | --- | --- | --- | --- |
 | Max container width | None (auto) | 540px | 720px | 960px | 1140px      |
 | Class prefix | .col- | .col-sm- | .col-md- | .col-lg- | .col-xl- |
+| Auto-sizing | .col-auto | .col-sm-auto | .col-md-auto | .col-lg-auto | .col-xl-auto |
+| Offset classes | .offset- | .offset-sm- | .offset-md- | .offset-lg- | .offset-xl- |
+| `.container` | 100% | 540px | 720px | 960px | 1140px |
+| `.container-fluid` | 100% | 100% | 100% | 100% | 100% |
 | Column numbers | 12
 | Gutter width | 30px (15px on each side of a column)
 
-## Contributing
-Your contributions are always welcome! [Click Here to read the guidelines.](https://github.com/valmisson/flexgrid/blob/master/CONTRIBUTING.md)
-
-
 ## License
 
-[MIT](https://github.com/valmisson/flexgrid/blob/master/LICENSE)
+[MIT](LICENSE)
+
+Copyright (c) 2019-present, Valmisson Grizorte
+
+[npm-shields]: https://img.shields.io/npm/v/gridi.svg
+[license-shields]: https://img.shields.io/badge/license-MIT-green
+[download-zip]: https://github.com/valmisson/gridi/archive/refs/heads/master.zip
+[npm-package]: https://www.npmjs.com/package/gridi
+[license-file]: https://github.com/valmisson/gridi/blob/master/LICENSE
