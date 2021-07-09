@@ -1,9 +1,25 @@
-node_modules
-*.log
-npm-debug.log*
-.npm
-*.tgz
+# Dependency directories
+node_modules/
+
+# Sass
 .sass-cache/
-*.css.map
 *.sass.map
 *.scss.map
+
+# Logs
+.DS_*
+*.log
+logs
+yarn-debug.log*
+yarn-error.log*
+npm-debug.log*
+
+# Optional cache directory
+.npm
+.cache
+
+# Optional eslint cache
+.eslintcache
+
+# Optional editor config
+.vscode

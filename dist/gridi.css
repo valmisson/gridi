@@ -8,9 +8,11 @@
 *   Repository (https://github.com/valmisson/gridi)
 *   Licensed under MIT (https://github.com/valmisson/gridi/blob/master/LICENSE)
 */
-
 *,
 *::before,
 *::after {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+/*# sourceMappingURL=gridi.css.map */
