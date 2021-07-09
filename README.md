@@ -1,6 +1,6 @@
 # Gridi
 
-A simple and flexible grid system created with flexbox using scss.
+> A simple and flexible grid system created with flexbox using scss.
 
 [![npm][npm-shields]][npm-package]
 [![license][license-shields]][license-file]
@@ -36,14 +36,14 @@ Or [download this repository][download-zip]
 
 ## Grid options
 
-| | Extra small <576px  | Small ≥576px | Medium ≥768px | Large ≥992px | Extra large ≥1200px |
-| --- | --- | --- | --- | --- | --- |
-| Max container width | None (auto) | 540px | 720px | 960px | 1140px      |
-| Class prefix | .col- | .col-sm- | .col-md- | .col-lg- | .col-xl- |
-| Auto-sizing | .col-auto | .col-sm-auto | .col-md-auto | .col-lg-auto | .col-xl-auto |
-| Offset classes | .offset- | .offset-sm- | .offset-md- | .offset-lg- | .offset-xl- |
-| `.container` | 100% | 540px | 720px | 960px | 1140px |
-| `.container-fluid` | 100% | 100% | 100% | 100% | 100% |
+| | Extra small <576px  | Small ≥576px | Medium ≥768px | Large ≥992px | Extra large ≥1200px | xxLarge ≥1400px |
+| --- | --- | --- | --- | --- | --- | --- |
+| Max container width | None (auto) | 540px | 720px | 960px | 1140px | 1320px |
+| Class prefix | .col- | .col-sm- | .col-md- | .col-lg- | .col-xl- | .col-xxl- |
+| Auto-sizing | .col-auto | .col-sm-auto | .col-md-auto | .col-lg-auto | .col-xl-auto | .col-xxl-auto |
+| Offset classes | .offset- | .offset-sm- | .offset-md- | .offset-lg- | .offset-xl- | .offset-xxl- |
+| `.container` | 100% | 540px | 720px | 960px | 1140px | 1320px |
+| `.container-fluid` | 100% | 100% | 100% | 100% | 100% | 100% |
 | Column numbers | 12
 | Gutter width | 30px (15px on each side of a column)
 
