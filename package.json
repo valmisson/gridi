@@ -5,7 +5,7 @@
   "scripts": {
     "scss": "node-sass scss/flexgrid.scss ./flexgrid.css --output-style expanded",
     "minify": "node-sass scss/flexgrid.scss ./flexgrid.min.css --output-style compressed",
-    "prefix": "postcss --replace \"flexgrid.css\" \"flexgrid.min.css\"",
+    "prefix": "postcss --replace ./flexgrid.css ./flexgrid.min.css",
     "build": "npm run scss & npm run minify & npm run prefix"
   },
   "repository": {
