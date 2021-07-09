@@ -19,7 +19,7 @@
 yarn add gridi
 ```
 
-Or [download this repository][download-zip]
+*Or [download this repository][download-zip]*
 
 
 ## Example
