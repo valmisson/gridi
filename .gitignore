@@ -1,6 +1,9 @@
 # Dependency directories
 node_modules/
 
+# Build directories
+dist/
+
 # Sass
 .sass-cache/
 *.sass.map
