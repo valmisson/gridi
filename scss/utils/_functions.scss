@@ -1,0 +1,17 @@
+// Set functions
+
+// Get the breakpoint size of the global variable map `$breakpoints`
+
+@function get-breakpoint($name, $breakpoints: $breakpoints) {
+  $breakpoint: map.get($breakpoints, $name);
+
+  @return if($breakpoint != 0, $breakpoint, null);
+}
+
+// Convert px to rem
+
+@function to-rem($pixel) {
+  $base-size: 16px;
+
+  @return math.div($pixel, $base-size) * 1rem;
+}

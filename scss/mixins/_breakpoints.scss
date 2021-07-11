@@ -1,0 +1,16 @@
+// Make breakpoint
+//
+// Generates breakpoint viewport sizes and media queries.
+
+@mixin make-breakpoint ($name, $breakpoints: $breakpoints) {
+  $width: get-breakpoint($name, $breakpoints);
+
+  @if $width {
+    @media (min-width: $width) {
+      @content;
+    }
+  }
+  @else {
+    @content;
+  }
+}

@@ -1,0 +1,30 @@
+// Container
+//
+// A component for fixing an element's width to the current breakpoint.
+
+$widths: $container-widths;
+$breakpoints: $breakpoints;
+
+.container {
+  &,
+  &-fluid {
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 100%;
+  }
+
+  &-fluid {
+    @include make-gutter-x;
+  }
+
+  @media(max-width: get-breakpoint('sm')) {
+    @include make-gutter-x;
+  }
+
+  @each $breakpoint, $width in $widths {
+    @include make-breakpoint($breakpoint, $breakpoints) {
+      max-width: $width;
+    }
+  }
+}

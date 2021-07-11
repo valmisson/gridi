@@ -9,8 +9,22 @@
 *   Licensed under MIT (https://github.com/valmisson/gridi/blob/master/LICENSE)
 */
 
+@use 'sass:map';
+@use 'sass:math';
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
+
+// utils
+@import 'utils/variables';
+@import 'utils/functions';
+
+// mixins
+@import 'mixins/breakpoints';
+@import 'mixins/gutters';
+
+// components
+@import 'components/container';
