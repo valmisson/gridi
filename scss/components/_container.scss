@@ -2,9 +2,6 @@
 //
 // A component for fixing an element's width to the current breakpoint.
 
-$widths: $container-widths;
-$breakpoints: $breakpoints;
-
 @include make-component('container', $responsive: false) {
   &,
   &-fluid {
@@ -22,7 +19,7 @@ $breakpoints: $breakpoints;
     @include make-gutter-x;
   }
 
-  @each $breakpoint, $width in $widths {
+  @each $breakpoint, $width in $container-widths {
     @include make-breakpoint($breakpoint, $breakpoints) {
       max-width: $width;
     }
