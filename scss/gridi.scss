@@ -12,12 +12,6 @@
 @use 'sass:map';
 @use 'sass:math';
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 // utils
 @import 'utils/variables';
 @import 'utils/functions';
@@ -27,4 +21,5 @@
 @import 'mixins/gutters';
 
 // components
+@import 'components/utilities';
 @import 'components/container';
