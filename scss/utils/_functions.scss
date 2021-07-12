@@ -8,6 +8,12 @@
   @return if($breakpoint != 0, $breakpoint, null);
 }
 
+// Get the names of the breakpoint (xs, sm, md, lg, xl)
+
+@function get-breakpoint-name($name, $breakpoints: $breakpoints) {
+  @return if(get-breakpoint($name, $breakpoints) == null, '', '#{$name}\\:');
+}
+
 // Convert px to rem
 
 @function to-rem($pixel) {

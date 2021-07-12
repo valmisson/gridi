@@ -1,0 +1,22 @@
+// Make component
+//
+// Generate components class with breakpoint and prefix
+
+@mixin make-component ($class, $responsive: true) {
+  @if $responsive {
+    @each $breakpoint in map.keys($breakpoints) {
+      $breakpoint-name: get-breakpoint-name($breakpoint);
+
+      @include make-breakpoint($breakpoint) {
+        .#{$breakpoint-name + $class} {
+          @content;
+        }
+      }
+    }
+  }
+  @else {
+    .#{$class} {
+      @content;
+    }
+  }
+}
