@@ -5,7 +5,7 @@
 $widths: $container-widths;
 $breakpoints: $breakpoints;
 
-.container {
+@include make-component('container', $responsive: false) {
   &,
   &-fluid {
     margin-left: auto;
