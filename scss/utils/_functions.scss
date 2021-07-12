@@ -13,5 +13,9 @@
 @function to-rem($pixel) {
   $base-size: 16px;
 
+  @if $pixel == 0px {
+    @return 0;
+  }
+
   @return math.div($pixel, $base-size) * 1rem;
 }
