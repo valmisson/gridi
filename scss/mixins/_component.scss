@@ -20,3 +20,13 @@
     }
   }
 }
+
+// Generate components sorted
+
+@mixin make-sort-component($start: 1, $end: $columns) {
+  @for $i from $start through $end {
+    &-#{$i} {
+      @content($i);
+    }
+  }
+}

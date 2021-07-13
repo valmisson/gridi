@@ -228,3 +228,23 @@
   }
 }
 
+// Order
+
+@include make-component('order') {
+  &-first {
+    order: -9999;
+  }
+
+  &-last {
+    order: 9999;
+  }
+
+  &-none {
+    order: 0;
+  }
+
+  // make component `.order-$i`
+  @include make-sort-component using ($i) {
+    order: $i;
+  }
+}
