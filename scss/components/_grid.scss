@@ -1,0 +1,244 @@
+// Grid CSS
+//
+// Utilities of Grid Layout
+
+@include make-component('grid') {
+  display: grid;
+
+  &-cols {
+    &-none {
+      grid-template-columns: none;
+    }
+
+    // make component `.grid-cols-$i`
+    @include make-sort-component using ($i) {
+      grid-template-columns: repeat($i, minmax(0, 1fr));
+    }
+  }
+
+  &-rows {
+    &-none {
+      grid-template-rows: none;
+    }
+
+    // make component `.grid-rows-$i`
+    @include make-sort-component($end: math.div($columns, 2)) using ($i) {
+      grid-template-rows: repeat($i, minmax(0, 1fr));
+    }
+  }
+
+  &-flow {
+    &-row {
+      grid-auto-flow: row;
+
+      &-dense {
+        grid-auto-flow: row dense;
+      }
+    }
+
+    &-col {
+      grid-auto-flow: column;
+
+      &-dense {
+        grid-auto-flow: column dense;
+      }
+    }
+  }
+}
+
+// Grid Column
+
+@include make-component('col') {
+  &-auto {
+    grid-column: auto;
+  }
+
+  &-span {
+    &-full {
+      grid-column: list.slash(1, -1);
+    }
+
+    // make component `.col-span-$i`
+    @include make-sort-component using ($i) {
+      grid-column: list.slash(span $i, span $i);
+    }
+  }
+
+  &-start {
+    &-auto {
+      grid-column-start: auto;
+    }
+
+    // make component `.col-start-$i`
+    @include make-sort-component($end: $columns + 1) using ($i) {
+      grid-column-start: $i;
+    }
+  }
+
+  &-end {
+    &-auto {
+      grid-column-end: auto;
+    }
+
+    // make component `.col-end-$i`
+    @include make-sort-component($end: $columns + 1) using ($i) {
+      grid-column-end: $i;
+    }
+  }
+}
+
+// Grid Row
+
+@include make-component('row') {
+  &-auto {
+    grid-row: auto;
+  }
+
+  &-span {
+    &-full {
+      grid-row: list.slash(1, -1);
+    }
+
+    // make component `.row-span-$i`
+    @include make-sort-component($end: math.div($columns, 2)) using ($i) {
+      grid-row: list.slash(span $i, span $i);
+    }
+  }
+
+  &-start {
+    &-auto {
+      grid-row-start: auto;
+    }
+
+    // make component `.row-start-$i`
+    @include make-sort-component($end: math.div($columns, 2) + 1) using ($i) {
+      grid-row-start: $i;
+    }
+  }
+
+  &-end {
+    &-auto {
+      grid-row-end: auto;
+    }
+
+    // make component `.row-end-$i`
+    @include make-sort-component($end: math.div($columns, 2) + 1) using ($i) {
+      grid-row-end: $i;
+    }
+  }
+}
+
+
+// Grid Auto Columns
+
+@include make-component('auto') {
+  &-cols {
+    &-auto {
+      grid-auto-columns: auto;
+    }
+
+    &-min {
+      grid-auto-columns: min-content;
+    }
+
+    &-max {
+      grid-auto-columns: max-content;
+    }
+
+    &-fr {
+      grid-auto-columns: minmax(0, 1fr);
+    }
+  }
+
+  &-rows {
+    &-auto {
+      grid-auto-rows: auto;
+    }
+
+    &-min {
+      grid-auto-rows: min-content;
+    }
+
+    &-max {
+      grid-auto-rows: max-content;
+    }
+
+    &-fr {
+      grid-auto-rows: minmax(0, 1fr);
+    }
+  }
+}
+
+// Place Content
+
+@include make-component('place') {
+  &-content {
+    &-center {
+      place-content: center;
+    }
+
+    &-start {
+      place-content: start;
+    }
+
+    &-end {
+      place-content: end;
+    }
+
+    &-between {
+      place-content: space-between;
+    }
+
+    &-around {
+      place-content: space-around;
+    }
+
+    &-evenly {
+      place-content: space-evenly;
+    }
+
+    &-stretch {
+      place-content: stretch;
+    }
+  }
+
+  &-items {
+    &-start {
+      place-items: start;
+    }
+
+    &-end {
+      place-items: end;
+    }
+
+    &-center {
+      place-items: center;
+    }
+
+    &-stretch {
+      place-items: stretch;
+    }
+  }
+
+  &-self {
+    &-auto {
+      place-self: auto;
+    }
+
+    &-start {
+      place-self: start;
+    }
+
+    &-end {
+      place-self: end;
+    }
+
+    &-center {
+      place-self: center;
+    }
+
+    &-stretch {
+      place-self: stretch;
+    }
+  }
+}

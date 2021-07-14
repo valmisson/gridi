@@ -11,6 +11,7 @@
 
 @use 'sass:map';
 @use 'sass:math';
+@use 'sass:list';
 
 // utils
 @import 'utils/variables';
@@ -25,3 +26,4 @@
 @import 'components/base';
 @import 'components/container';
 @import 'components/flex';
+@import 'components/grid';
