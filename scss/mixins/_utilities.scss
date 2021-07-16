@@ -14,3 +14,23 @@
     @content;
   }
 }
+
+
+// Make Spacing
+//
+// Generates the gutters spacing
+
+@mixin make-spacing ($position: false, $spacers: $spacers) {
+  @if $position {
+    &#{$position} {
+      @include make-sort-component($start: 0, $end: length($spacers)) using ($i) {
+        @content(map.get($spacers, $i));
+      }
+    }
+  }
+  @else {
+    @include make-sort-component($start: 0, $end: length($spacers)) using ($i) {
+      @content(map.get($spacers, $i));
+    }
+  }
+}

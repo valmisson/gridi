@@ -1,0 +1,144 @@
+// Spacing
+//
+// Utilities for controlling gutters
+
+// Gap
+
+@include make-component('gap') {
+  // make component `.gap-$i`
+  @include make-spacing using ($spacer) {
+    gap: $spacer;
+  };
+
+  // make component `.gap-x-$i`
+  @include make-spacing('-x') using ($spacer) {
+    column-gap: $spacer;
+  };
+
+  // // make component `.gap-y-$i`
+  @include make-spacing('-y') using ($spacer) {
+    row-gap: $spacer;
+  };
+}
+
+// Padding
+
+@include make-component('p') {
+  // make component `.p-$i`
+  @include make-spacing using ($spacer) {
+    padding: $spacer;
+  };
+
+  // make component `.px-$i`
+  @include make-spacing('x') using ($spacer) {
+    padding: {
+      left: $spacer;
+      right: $spacer;
+    }
+  };
+
+  // make component `.py-$i`
+  @include make-spacing('y') using ($spacer) {
+    padding: {
+      top: $spacer;
+      bottom: $spacer;
+    }
+  };
+
+  // make component `.pt-$i`
+  @include make-spacing('t') using ($spacer) {
+    padding: {
+      top: $spacer;
+    }
+  };
+
+  // make component `.pb-$i`
+  @include make-spacing('b') using ($spacer) {
+    padding: {
+      bottom: $spacer;
+    }
+  };
+
+  // make component `.pl-$i`
+  @include make-spacing('l') using ($spacer) {
+    padding: {
+      left: $spacer;
+    }
+  };
+
+  // make component `.pr-$i`
+  @include make-spacing('r') using ($spacer) {
+    padding: {
+      right: $spacer;
+    }
+  };
+}
+
+// Margin
+
+@include make-component('m') {
+  // make component `.m-$i`
+  @include make-spacing using ($spacer) {
+    margin: $spacer;
+  };
+
+  // make component `.mx-$i`
+  @include make-spacing('x') using ($spacer) {
+    margin: {
+      left: $spacer;
+      right: $spacer;
+    }
+  };
+
+  // // make component `.my-$i`
+  @include make-spacing('y') using ($spacer) {
+    margin: {
+      top: $spacer;
+      bottom: $spacer;
+    }
+  };
+
+  // make component `.mt-$i`
+  @include make-spacing('t') using ($spacer) {
+    margin: {
+      top: $spacer;
+    }
+  };
+
+  // make component `.mb-$i`
+  @include make-spacing('b') using ($spacer) {
+    margin: {
+      bottom: $spacer;
+    }
+  };
+
+  // make component `.ml-$i`
+  @include make-spacing('l') using ($spacer) {
+    margin: {
+      left: $spacer;
+    }
+  };
+
+  // make component `.mr-$i`
+  @include make-spacing('r') using ($spacer) {
+    margin: {
+      right: $spacer;
+    }
+  };
+
+  // make component `.mx-auto`
+  &#{'x-auto'} {
+    margin: {
+      left: auto;
+      right: auto;
+    }
+  };
+
+  // make component `.my-auto`
+  &#{'y-auto'} {
+    margin: {
+      top: auto;
+      bottom: auto;
+    }
+  };
+}
