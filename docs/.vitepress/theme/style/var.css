@@ -1,0 +1,10 @@
+:root {
+  --c-brand: #22B6FF;
+  --c-divider: rgba(39, 39, 39, 0.1);
+}
+
+@media (min-width: 720px) {
+  :root {
+    --header-height: 4.375rem;
+  }
+}

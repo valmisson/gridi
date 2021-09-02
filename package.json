@@ -18,6 +18,8 @@
     "build": "run-s scss prefix minify",
     "watch": "sass scss/gridi.scss dist/gridi.css --watch",
     "version": "npm run build && conventional-changelog -p angular -i CHANGELOG.md -s -r 1 && git add .",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
@@ -27,7 +29,8 @@
     "npm-run-all": "^4.1.5",
     "postcss": "^8.3.5",
     "postcss-cli": "^8.3.1",
-    "sass": "^1.35.2"
+    "sass": "^1.35.2",
+    "vitepress": "^0.16.1"
   },
   "repository": "https://github.com/valmisson/gridi",
   "homepage": "https://github.com/valmisson/gridi#readme",
