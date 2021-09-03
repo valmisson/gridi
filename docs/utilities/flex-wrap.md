@@ -8,7 +8,7 @@ Utilities for controlling how flex items wrap.
 | flex-wrap-reverse | flex-wrap: wrap-reverse; |
 | flex-nowrap       | flex-wrap: nowrap;       |
 
-### Wrap normally
+## Wrap normally
 
 Use `flex-wrap` to allow flex items to wrap:
 
@@ -18,7 +18,7 @@ Use `flex-wrap` to allow flex items to wrap:
 </div>
 ```
 
-### Wrap reversed
+## Wrap reversed
 
 Use `flex-wrap-reverse` to wrap flex items in the reverse direction:
 
@@ -28,7 +28,7 @@ Use `flex-wrap-reverse` to wrap flex items in the reverse direction:
 </div>
 ```
 
-### Don't wrap
+## Don't wrap
 
 Use `flex-nowrap` to prevent flex items from wrapping, causing inflexible items to overflow the container if necessary:
 
@@ -38,7 +38,7 @@ Use `flex-nowrap` to prevent flex items from wrapping, causing inflexible items 
 </div>
 ```
 
-### Responsive
+## Responsive
 
 To control how flex items wrap at a specific breakpoint, add a `{screen}:` prefix to any existing utility class. For example, use `md:flex-wrap-reverse` to apply the `flex-wrap-reverse` utility at only medium screen sizes and above.
 

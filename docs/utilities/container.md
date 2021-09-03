@@ -1,3 +1,7 @@
+---
+sidebarDepth: 2
+---
+
 # Container
 
 A component for fixing an element's width to the current breakpoint.
@@ -11,7 +15,7 @@ A component for fixing an element's width to the current breakpoint.
 |           | xl (1200px)  | 	max-width: 1140px; |
 |           | xxl (1400px) | 	max-width: 1320px; |
 
-### Usage
+## Usage
 
 To center a container, use the mx-auto utility:
 

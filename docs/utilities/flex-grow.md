@@ -7,7 +7,7 @@ Utilities for controlling how flex items grow.
 | flex-grow   | flex-grow: 1; |
 | flex-grow-0 | flex-grow: 0; |
 
-### Grow
+## Grow
 
 Use `flex-grow `to allow a flex item to grow to fill any available space:
 
@@ -19,7 +19,7 @@ Use `flex-grow `to allow a flex item to grow to fill any available space:
 </div>
 ```
 
-### Don't grow
+## Don't grow
 
 Use `flex-grow-0` to prevent a flex item from growing:
 
@@ -31,7 +31,7 @@ Use `flex-grow-0` to prevent a flex item from growing:
 </div>
 ```
 
-### Responsive
+## Responsive
 
 To control how a flex item grows at a specific breakpoint, add a `{screen}:` prefix to any existing utility class. For example, use `md:flex-grow-0` to apply the `flex-grow-0` utility at only medium screen sizes and above.
 

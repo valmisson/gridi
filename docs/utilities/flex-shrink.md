@@ -7,7 +7,7 @@ Utilities for controlling how flex items shrink.
 | flex-shrink   | flex-shrink: 1; |
 | flex-shrink-0 | flex-shrink: 0; |
 
-### Shrink
+## Shrink
 
 Use `flex-shrink` to allow a flex item to shrink if needed:
 
@@ -19,7 +19,7 @@ Use `flex-shrink` to allow a flex item to shrink if needed:
 </div>
 ```
 
-### Don't shrink
+## Don't shrink
 
 Use `flex-shrink-0` to prevent a flex item from shrinking:
 
@@ -31,7 +31,7 @@ Use `flex-shrink-0` to prevent a flex item from shrinking:
 </div>
 ```
 
-### Responsive
+## Responsive
 
 To control how a flex item shrinks at a specific breakpoint, add a `{screen}:` prefix to any existing utility class. For example, use `md:flex-shrink-0` to apply the `flex-shrink-0` utility at only medium screen sizes and above.
 

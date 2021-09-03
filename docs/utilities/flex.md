@@ -10,7 +10,7 @@ Utilities for controlling how flex items both grow and shrink.
 | flex-initial | flex: 0 1 auto; |
 | flex-none    | flex: none;     |
 
-### Flex
+## Flex
 
 Use `flex` to create a block-level flex container.
 
@@ -20,7 +20,7 @@ Use `flex` to create a block-level flex container.
 </div>
 ```
 
-### Flex 1
+## Flex 1
 
 Use `flex-1` to allow a flex item to grow and shrink as needed, ignoring its initial size:
 
@@ -32,7 +32,7 @@ Use `flex-1` to allow a flex item to grow and shrink as needed, ignoring its ini
 </div>
 ```
 
-### Auto
+## Auto
 
 Use `flex-auto` to allow a flex item to grow and shrink, taking into account its initial size:
 
@@ -44,7 +44,7 @@ Use `flex-auto` to allow a flex item to grow and shrink, taking into account its
 </div>
 ```
 
-### Initial
+## Initial
 
 Use `flex-initial` to allow a flex item to shrink but not grow, taking into account its initial size:
 
@@ -56,7 +56,7 @@ Use `flex-initial` to allow a flex item to shrink but not grow, taking into acco
 </div>
 ```
 
-### None
+## None
 
 Use `flex-none` to prevent a flex item from growing or shrinking:
 
@@ -68,7 +68,7 @@ Use `flex-none` to prevent a flex item from growing or shrinking:
 </div>
 ```
 
-### Responsive
+## Responsive
 
 To control how a flex item both grows and shrinks at a specific breakpoint, add a `{screen}:` prefix to any existing utility class. For example, use `md:flex-1` to apply the `flex-1` utility at only medium screen sizes and above.
 
