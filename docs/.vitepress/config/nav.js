@@ -9,7 +9,8 @@ module.exports = [
       { text: 'Flex Grow', link: '/utilities/flex-grow' },
       { text: 'Flex Shrink', link: '/utilities/flex-shrink' },
       { text: 'Flex Direction', link: '/utilities/flex-direction' },
-      { text: 'Justify Content', link: '/utilities/justify-content' }
+      { text: 'Justify Content', link: '/utilities/justify-content' },
+      { text: 'Justify Items', link: '/utilities/justify-items' }
     ]
   },
 ]
