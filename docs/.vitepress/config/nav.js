@@ -3,7 +3,8 @@ module.exports = [
   {
     text: 'Utilities',
     items: [
-      { text: 'Container', link: '/utilities/container' }
+      { text: 'Container', link: '/utilities/container' },
+      { text: 'Flex', link: '/utilities/flex' }
     ]
   },
 ]

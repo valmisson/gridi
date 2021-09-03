@@ -11,7 +11,8 @@ module.exports = {
     {
       text: 'Utilities',
       children: [
-        { text: 'Container', link: '/utilities/container' }
+        { text: 'Container', link: '/utilities/container' },
+        { text: 'Flex', link: '/utilities/flex' }
       ]
     }
   ]
