@@ -6,7 +6,8 @@ module.exports = [
       { text: 'Container', link: '/utilities/container' },
       { text: 'Flex', link: '/utilities/flex', activeMatch: '^/utilities/flex+$' },
       { text: 'Flex Wrap', link: '/utilities/flex-wrap' },
-      { text: 'Flex Grow', link: '/utilities/flex-grow' }
+      { text: 'Flex Grow', link: '/utilities/flex-grow' },
+      { text: 'Flex Shrink', link: '/utilities/flex-shrink' }
     ]
   },
 ]
