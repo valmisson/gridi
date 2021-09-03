@@ -12,7 +12,8 @@ module.exports = {
       text: 'Utilities',
       children: [
         { text: 'Container', link: '/utilities/container' },
-        { text: 'Flex', link: '/utilities/flex' }
+        { text: 'Flex', link: '/utilities/flex' },
+        { text: 'Flex Wrap', link: '/utilities/flex-wrap' }
       ]
     }
   ]
