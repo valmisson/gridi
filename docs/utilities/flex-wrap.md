@@ -37,3 +37,13 @@ Use `flex-nowrap` to prevent flex items from wrapping, causing inflexible items 
   <!-- ... -->
 </div>
 ```
+
+### Responsive
+
+To control how flex items wrap at a specific breakpoint, add a `{screen}:` prefix to any existing utility class. For example, use `md:flex-wrap-reverse` to apply the `flex-wrap-reverse` utility at only medium screen sizes and above.
+
+```html
+<div class="flex flex-wrap md:flex-wrap-reverse">
+  <!-- ... -->
+</div>
+```

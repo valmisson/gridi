@@ -67,3 +67,17 @@ Use `flex-none` to prevent a flex item from growing or shrinking:
   </div>
 </div>
 ```
+
+### Responsive
+
+To control how a flex item both grows and shrinks at a specific breakpoint, add a `{screen}:` prefix to any existing utility class. For example, use `md:flex-1` to apply the `flex-1` utility at only medium screen sizes and above.
+
+```html
+<div class="flex">
+  <!-- ... -->
+  <div class="flex-none md:flex-1">
+    Responsive flex item
+  </div>
+  <!-- ... -->
+</div>
+```
