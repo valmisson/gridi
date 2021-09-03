@@ -16,7 +16,8 @@ module.exports = {
         { text: 'Flex Wrap', link: '/utilities/flex-wrap' },
         { text: 'Flex Grow', link: '/utilities/flex-grow' },
         { text: 'Flex Shrink', link: '/utilities/flex-shrink' },
-        { text: 'Flex Direction', link: '/utilities/flex-direction' }
+        { text: 'Flex Direction', link: '/utilities/flex-direction' },
+        { text: 'Justify Content', link: '/utilities/justify-content' }
       ]
     }
   ]
