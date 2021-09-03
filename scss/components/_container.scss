@@ -2,12 +2,8 @@
 //
 // A component for fixing an element's width to the current breakpoint.
 
-@include make-component('container', $responsive: false) {
-  &,
-  &-fluid {
-    margin-left: auto;
-    margin-right: auto;
-
+@include make-component('container') {
+  & {
     width: 100%;
   }
 
