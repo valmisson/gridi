@@ -18,6 +18,29 @@
   max-width: 100% !important;
 }
 
+.content table {
+  display: table;
+  width: 100%;
+  table-layout: auto;
+}
+
+.content tr {
+  border: none;
+}
+
+.content th,
+.content td {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 0px 1px solid #dfe2e5;
+  padding: 0.6rem 1rem 0.6rem 0;
+}
+
+.content tr:nth-child(2n) {
+  background-color: transparent;
+}
+
 @media (min-width: 720px) {
   .nav-links {
     padding-top: 0 !important;
