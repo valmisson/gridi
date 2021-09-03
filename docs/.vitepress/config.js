@@ -6,7 +6,7 @@ module.exports = {
     repo: 'valmisson/docs-theme',
 
     nav: [
-      { text: 'Guide', link: '/guide/getting-started', activeMatch: '^^/guide/' }
+      { text: 'Guide', link: '/guide/installation', activeMatch: '^/guide/' }
     ],
 
     sidebar: {
@@ -18,9 +18,9 @@ module.exports = {
 function getGuideSidebar() {
   return [
     {
-      text: 'Introduction',
+      text: 'Getting Started',
       children: [
-        { text: 'Getting Started', link: '/guide/getting-started' },
+        { text: 'Installation', link: '/guide/installation' }
       ]
     }
   ]
