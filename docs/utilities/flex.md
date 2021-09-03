@@ -16,7 +16,7 @@ Use `flex` to create a block-level flex container.
 
 ```html
 <div class="flex">
-  ...
+  <!-- ... -->
 </div>
 ```
 

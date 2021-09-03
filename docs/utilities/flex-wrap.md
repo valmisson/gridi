@@ -14,7 +14,7 @@ Use `flex-wrap` to allow flex items to wrap:
 
 ```html
 <div class="flex flex-wrap">
-  ...
+  <!-- ... -->
 </div>
 ```
 
@@ -24,7 +24,7 @@ Use `flex-wrap-reverse` to wrap flex items in the reverse direction:
 
 ```html
 <div class="flex flex-wrap-reverse">
-  ...
+  <!-- ... -->
 </div>
 ```
 
@@ -34,6 +34,6 @@ Use `flex-nowrap` to prevent flex items from wrapping, causing inflexible items 
 
 ```html
 <div class="flex flex-nowrap">
-  ...
+  <!-- ... -->
 </div>
 ```
