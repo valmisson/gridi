@@ -6,11 +6,18 @@ module.exports = {
     repo: 'valmisson/docs-theme',
 
     nav: [
-      { text: 'Guide', link: '/guide/installation', activeMatch: '^/guide/' }
+      { text: 'Guide', link: '/guide/installation', activeMatch: '^/guide/' },
+      {
+        text: 'Utilities',
+        items: [
+          { text: 'Container', link: '/utilities/container' }
+        ]
+      },
     ],
 
     sidebar: {
-      '/guide/': getGuideSidebar()
+      '/guide/': getGuideSidebar(),
+      '/utilities/': getUtilitiesSidebar()
     }
   }
 }
@@ -21,6 +28,17 @@ function getGuideSidebar() {
       text: 'Getting Started',
       children: [
         { text: 'Installation', link: '/guide/installation' }
+      ]
+    }
+  ]
+}
+
+function getUtilitiesSidebar() {
+  return [
+    {
+      text: 'Utilities',
+      children: [
+        { text: 'Container', link: '/utilities/container' }
       ]
     }
   ]
