@@ -13,7 +13,8 @@ module.exports = [
       { text: 'Justify Items', link: '/utilities/justify-items' },
       { text: 'Justify Self', link: '/utilities/justify-self' },
       { text: 'Align Content', link: '/utilities/align-content' },
-      { text: 'Align Items', link: '/utilities/align-items' }
+      { text: 'Align Items', link: '/utilities/align-items' },
+      { text: 'Align Self', link: '/utilities/align-self' }
     ]
   },
 ]
