@@ -24,6 +24,7 @@ module.exports = {
         { text: 'Grid Template Rows', link: '/utilities/grid-template-rows' },
         { text: 'Grid Row Start / End', link: '/utilities/grid-row' },
         { text: 'Grid Auto Flow', link: '/utilities/grid-auto-flow' },
+        { text: 'Grid Auto Columns', link: '/utilities/grid-auto-columns' },
         { text: 'Justify Content', link: '/utilities/justify-content' },
         { text: 'Justify Items', link: '/utilities/justify-items' },
         { text: 'Justify Self', link: '/utilities/justify-self' },
