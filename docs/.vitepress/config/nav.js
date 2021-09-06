@@ -14,6 +14,7 @@ module.exports = [
       { text: 'Grid Template Columns', link: '/utilities/grid-template-columns' },
       { text: 'Grid Column Start / End', link: '/utilities/grid-column' },
       { text: 'Grid Template Rows', link: '/utilities/grid-template-rows' },
+      { text: 'Grid Row Start / End', link: '/utilities/grid-row' },
       { text: 'Justify Content', link: '/utilities/justify-content' },
       { text: 'Justify Items', link: '/utilities/justify-items' },
       { text: 'Justify Self', link: '/utilities/justify-self' },
