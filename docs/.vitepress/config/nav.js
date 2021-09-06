@@ -12,6 +12,7 @@ module.exports = [
       { text: 'Order', link: '/utilities/order' },
       { text: 'Grid', link: '/utilities/grid' },
       { text: 'Grid Template Columns', link: '/utilities/grid-template-columns' },
+      { text: 'Grid Template Rows', link: '/utilities/grid-template-rows' },
       { text: 'Justify Content', link: '/utilities/justify-content' },
       { text: 'Justify Items', link: '/utilities/justify-items' },
       { text: 'Justify Self', link: '/utilities/justify-self' },
