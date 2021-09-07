@@ -26,6 +26,7 @@ module.exports = {
         { text: 'Grid Auto Flow', link: '/utilities/grid-auto-flow' },
         { text: 'Grid Auto Columns', link: '/utilities/grid-auto-columns' },
         { text: 'Grid Auto Rows', link: '/utilities/grid-auto-rows' },
+        { text: 'Gap', link: '/utilities/gap' },
         { text: 'Justify Content', link: '/utilities/justify-content' },
         { text: 'Justify Items', link: '/utilities/justify-items' },
         { text: 'Justify Self', link: '/utilities/justify-self' },
