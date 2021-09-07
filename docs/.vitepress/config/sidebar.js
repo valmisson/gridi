@@ -36,7 +36,8 @@ module.exports = {
         { text: 'Place Content', link: '/utilities/place-content' },
         { text: 'Place Items', link: '/utilities/place-items' },
         { text: 'Place Self', link: '/utilities/place-self' },
-        { text: 'Padding', link: '/utilities/padding' }
+        { text: 'Padding', link: '/utilities/padding' },
+        { text: 'Margin', link: '/utilities/margin' }
       ]
     }
   ]
