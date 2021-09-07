@@ -32,7 +32,8 @@ module.exports = {
         { text: 'Justify Self', link: '/utilities/justify-self' },
         { text: 'Align Content', link: '/utilities/align-content' },
         { text: 'Align Items', link: '/utilities/align-items' },
-        { text: 'Align Self', link: '/utilities/align-self' }
+        { text: 'Align Self', link: '/utilities/align-self' },
+        { text: 'Place Content', link: '/utilities/place-content' }
       ]
     }
   ]
