@@ -34,7 +34,8 @@ module.exports = {
         { text: 'Align Items', link: '/utilities/align-items' },
         { text: 'Align Self', link: '/utilities/align-self' },
         { text: 'Place Content', link: '/utilities/place-content' },
-        { text: 'Place Items', link: '/utilities/place-items' }
+        { text: 'Place Items', link: '/utilities/place-items' },
+        { text: 'Place Self', link: '/utilities/place-self' }
       ]
     }
   ]
