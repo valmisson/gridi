@@ -1,25 +1,32 @@
 # Gridi
 
-> A simple and flexible grid system created with flexbox using scss.
+> A modern utility Grid System.
+
+A utility-first CSS framework, build to quickly design and structure responsive sites with classes like flex, flex-column, justify-center, grid, col-span-2...
 
 [![npm][npm-shields]][npm-package]
 [![license][license-shields]][license-file]
 
 
-## Features
+## Documentation
 
-* Powerful grid system made with flexbox and over the mobile-first concept.
-* Create layouts of all shapes and sizes with a 12-column system and five standard responsive levels.
-* Easy to customize and adapt to your layout with scss.
+Check [the documentation website](https://valmisson.github.io/gridi)
 
-## Install
+## Installation
 
-```sh
-yarn add gridi
+Looking to quickly add Gridi to your project? Use npm or jsDelivr.
+
+**Install Gridi via npm**
+
+```bash
+$ npm install gridi
 ```
 
-*Or [download repository][download-zip]*
+**Install Gridi via jsDelivr**
 
+```html
+<link href="https://cdn.jsdelivr.net/npm/gridi/dist/gridi.min.css" rel="stylesheet">
+```
 
 ## License
 
@@ -29,6 +36,5 @@ Copyright (c) 2019-present, Valmisson Grizorte
 
 [npm-shields]: https://img.shields.io/npm/v/gridi.svg
 [license-shields]: https://img.shields.io/badge/license-MIT-green
-[download-zip]: https://github.com/valmisson/gridi/archive/refs/heads/master.zip
 [npm-package]: https://www.npmjs.com/package/gridi
 [license-file]: https://github.com/valmisson/gridi/blob/master/LICENSE
