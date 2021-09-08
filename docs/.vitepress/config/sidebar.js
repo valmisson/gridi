@@ -5,6 +5,12 @@ module.exports = {
       children: [
         { text: 'Installation', link: '/guide/installation' }
       ]
+    },
+    {
+      text: 'Core concepts',
+      children: [
+        { text: 'Responsive Design', link: '/guide/responsive-design' }
+      ]
     }
   ],
   '/utilities/': [
