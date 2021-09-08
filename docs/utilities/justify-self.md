@@ -69,3 +69,5 @@ To control the alignment of a grid item inside its grid area at a specific break
   <div class="justify-self-auto md:justify-self-center">1</div>
 </div>
 ```
+
+For more information about Gridi responsive design features, check out the [Responsive Design](/guide/responsive-design) documentation.

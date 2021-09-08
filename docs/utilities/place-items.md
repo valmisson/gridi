@@ -59,3 +59,5 @@ To place items at a specific breakpoint, add a `{screen}:` prefix to any existin
   <!-- ... -->
 </div>
 ```
+
+For more information about Gridi responsive design features, check out the [Responsive Design](/guide/responsive-design) documentation.

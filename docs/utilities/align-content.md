@@ -85,3 +85,5 @@ To control the alignment of flex content at a specific breakpoint, add a `{scree
   <!-- ... -->
 </div>
 ```
+
+For more information about Gridi responsive design features, check out the [Responsive Design](/guide/responsive-design) documentation.

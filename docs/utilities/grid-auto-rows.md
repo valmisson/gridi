@@ -32,3 +32,5 @@ To control the grid-auto-rows property at a specific breakpoint, add a `{screen}
   <!-- ... -->
 </div>
 ```
+
+For more information about Gridi responsive design features, check out the [Responsive Design](/guide/responsive-design) documentation.

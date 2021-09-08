@@ -29,3 +29,5 @@ To control the display property of an element at a specific breakpoint, add a `{
   <!-- ... -->
 </div>
 ```
+
+For more information about Gridi responsive design features, check out the [Responsive Design](/guide/responsive-design) documentation.

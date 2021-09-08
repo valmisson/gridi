@@ -65,3 +65,5 @@ To control the row placement of an element at a specific breakpoint, add a `{scr
   </div>
 </div>
 ```
+
+For more information about Gridi responsive design features, check out the [Responsive Design](/guide/responsive-design) documentation.
