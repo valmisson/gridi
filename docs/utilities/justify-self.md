@@ -70,4 +70,4 @@ To control the alignment of a grid item inside its grid area at a specific break
 </div>
 ```
 
-For more information about Gridi responsive design features, check out the [Responsive Design](/guide/responsive-design) documentation.
+For more information about Gridi responsive design features, check out the <a href="/gridi/guide/responsive-design.html">Responsive Design</a> documentation.

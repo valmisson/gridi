@@ -82,4 +82,4 @@ To control how a flex item both grows and shrinks at a specific breakpoint, add 
 </div>
 ```
 
-For more information about Gridi responsive design features, check out the [Responsive Design](/guide/responsive-design) documentation.
+For more information about Gridi responsive design features, check out the <a href="/gridi/guide/responsive-design.html">Responsive Design</a> documentation.
