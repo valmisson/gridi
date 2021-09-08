@@ -10,7 +10,7 @@ home: true
   A utility-first CSS framework, build to quickly design and structure responsive sites with classes like <strong>flex, flex-column, justify-center, grid, col-span-2</strong>...
 </p>
 
-<a href="/guide/installation" class="btn">Getting Started</a>
+<a href="/gridi/guide/installation" class="btn">Getting Started</a>
 
 Currently v{{ pkg.version }}, Code Licensed [MIT](https://github.com/valmisson/docs-theme/blob/main/LICENSE)
 
