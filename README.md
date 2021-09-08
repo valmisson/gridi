@@ -14,7 +14,7 @@ Check [the documentation website](https://valmisson.github.io/gridi)
 
 ## Installation
 
-Looking to quickly add Gridi to your project? Use npm or jsDelivr.
+Looking to quickly add Gridi to your project? Use npm or unpkg.
 
 **Install Gridi via npm**
 
