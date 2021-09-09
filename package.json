@@ -32,7 +32,7 @@
     "postcss-cli": "^8.3.1",
     "push-dir": "^0.4.1",
     "sass": "^1.39.0",
-    "vitepress": "^0.17.1"
+    "vitepress": "^0.17.2"
   },
   "repository": "https://github.com/valmisson/gridi",
   "homepage": "https://github.com/valmisson/gridi#readme",
