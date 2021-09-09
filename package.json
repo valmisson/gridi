@@ -1,7 +1,7 @@
 {
   "name": "gridi",
   "version": "1.0.2",
-  "description": "A simple and flexible grid system created with flexbox using scss",
+  "description": "A modern utility Grid System.",
   "author": "Valmisson Grizorte",
   "license": "MIT",
   "main": "dist/gridi.css",
@@ -35,7 +35,7 @@
     "vitepress": "^0.17.2"
   },
   "repository": "https://github.com/valmisson/gridi",
-  "homepage": "https://github.com/valmisson/gridi#readme",
+  "homepage": "https://valmisson.github.io/gridi/",
   "bugs": {
     "url": "https://github.com/valmisson/gridi/issues"
   },
