@@ -6,11 +6,11 @@ sidebarDepth: 2
 
 Utilities for controlling gutters between grid and flexbox items.
 
-| Class        | Properties        |
-| :----------- | :---------------- |
-| gap-{0-16}   | gap: {0 - 6rem}; |
-| gap-x-{0-16} | column-gap: {0 - 6rem};; |
-| gap-y-{0-16} | row-gap: {0 - 6rem};;    |
+| Class          | Properties             |
+| :------------- | :--------------------- |
+| gap-`[0-30]`   | gap: 0 - 24rem;        |
+| gap-x-`[0-30]` | column-gap: 0 - 24rem; |
+| gap-y-`[0-30]` | row-gap: 0 - 24rem;    |
 
 ## Usage
 

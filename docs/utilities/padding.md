@@ -2,15 +2,15 @@
 
 Utilities for controlling an element's padding.
 
-| Class     | Properties                                                |
-| :-------- | :-------------------------------------------------------- |
-| pt-{0-16} | padding-top: {0 - 6rem};                                  |
-| pb-{0-16} | padding-bottom: {0 - 6rem};                               |
-| pr-{0-16} | padding-right: {0 - 6rem};                                |
-| pl-{0-16} | padding-left: {0 - 6rem};                                 |
-| px-{0-16} | padding-left: {0 - 6rem}; <br> padding-right: {0 - 6rem}; |
-| py-{0-16} | padding-top: {0 - 6rem}; <br> padding-bottom: {0 - 6rem}; |
-| p-{0-16}  | padding: {0 - 6rem};                                      |
+| Class       | Properties                                              |
+| :---------- | :------------------------------------------------------ |
+| pt-`[0-30]` | padding-top: 0 - 24rem;                                 |
+| pb-`[0-30]` | padding-bottom: 0 - 24rem;                              |
+| pr-`[0-30]` | padding-right: 0 - 24rem;                               |
+| pl-`[0-30]` | padding-left: 0 - 24rem;                                |
+| px-`[0-30]` | padding-left: 0 - 24rem; <br> padding-right: 0 - 24rem; |
+| py-`[0-30]` | padding-top: 0 - 24rem; <br> padding-bottom: 0 - 24rem; |
+| p-`[0-30]`  | padding: 0 - 24rem;                                     |
 
 ## Add padding to a single side
 
