@@ -3,8 +3,6 @@
 // Utilities of Grid Layout
 
 @include make-component('grid') {
-  display: grid;
-
   &-cols {
     &-none {
       grid-template-columns: none;

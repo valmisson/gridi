@@ -3,10 +3,6 @@
 // Utilities of flexbox
 
 @include make-component('flex') {
-  display: flex;
-
-  // Flex
-
   &-1 {
     flex: 1 1 0%;
   }
