@@ -1,3 +1,13 @@
+# [2.1.0](https://github.com/valmisson/gridi/compare/v2.0.2...v2.1.0) (2021-10-28)
+
+
+### Features
+
+* add display components ([055d9a0](https://github.com/valmisson/gridi/commit/055d9a08f5a7c5c355801adbb6bb54c2fd6ceb32))
+* add more spacing sizes ([160b3d7](https://github.com/valmisson/gridi/commit/160b3d719cec4bf9d598784ad8cbda483c94db2f))
+
+
+
 ## [2.0.2](https://github.com/valmisson/gridi/compare/v2.0.1...v2.0.2) (2021-10-15)
 
 
