@@ -20,6 +20,7 @@
     "version": "npm run build && conventional-changelog -p angular -i CHANGELOG.md -s -r 1 && git add .",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
+    "docs:deploy": "run-s docs:build gh-pages",
     "gh-pages": "push-dir --dir=docs/.vitepress/dist --branch=gh-pages --cleanup --verbose",
     "prepublishOnly": "npm run build"
   },
