@@ -24,13 +24,13 @@
   @if $position {
     &#{$position} {
       @include make-sort-component($start: 0, $end: length($spacers)) using ($i) {
-        @content(map.get($spacers, $i));
+        @content($i);
       }
     }
   }
   @else {
     @include make-sort-component($start: 0, $end: length($spacers)) using ($i) {
-      @content(map.get($spacers, $i));
+      @content($i);
     }
   }
 }

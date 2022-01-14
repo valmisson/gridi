@@ -1,0 +1,87 @@
+// Display
+//
+// Mixings for controlling the display box type of an element.
+
+@mixin flex {
+  display: flex;
+}
+
+@mixin grid {
+  display: grid;
+}
+
+@mixin block {
+  display: block;
+}
+
+@mixin hidden {
+  display: none;
+}
+
+@mixin table {
+  display: table;
+}
+
+@mixin table-caption {
+  display: table-caption;
+}
+
+@mixin table-cell {
+  display: table-cell;
+}
+
+@mixin table-column {
+  display: table-column;
+}
+
+@mixin table-column-group {
+  display: table-column-group;
+}
+
+@mixin table-footer-group {
+  display: table-footer-group;
+}
+
+@mixin table-header-group {
+  display: table-header-group;
+}
+
+@mixin table-row-group {
+  display: table-row-group;
+}
+
+@mixin table-row {
+  display: table-row;
+}
+
+@mixin flow-root {
+  display: flow-root;
+}
+
+@mixin contents {
+  display: contents;
+}
+
+@mixin list-item {
+  display: list-item;
+}
+
+@mixin inline {
+  display: inline;
+}
+
+@mixin inline-flex {
+  display: inline-flex;
+}
+
+@mixin inline-grid {
+  display: inline-grid;
+}
+
+@mixin inline-block {
+  display: inline-block;
+}
+
+@mixin inline-table {
+  display: inline-table;
+}

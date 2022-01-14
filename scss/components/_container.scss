@@ -3,13 +3,5 @@
 // A component for fixing an element's width to the current breakpoint.
 
 @include make-component('container') {
-  & {
-    width: 100%;
-  }
-
-  @each $breakpoint, $width in $container-widths {
-    @include make-breakpoint($breakpoint, $breakpoints) {
-      max-width: $width;
-    }
-  }
+  @include container;
 }

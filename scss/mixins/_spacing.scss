@@ -1,0 +1,138 @@
+// Spacing
+//
+// Mixins for controlling gutters
+
+// Gap
+
+// make `gap-$i`
+@mixin gap ($spacer) {
+  gap: get-spacer($spacer);
+};
+
+// make `gap-x-$i`
+@mixin gap-x ($spacer) {
+  column-gap: get-spacer($spacer);
+};
+
+// // make `gap-y-$i`
+@mixin gap-y ($spacer) {
+  row-gap: get-spacer($spacer);
+};
+
+// Padding
+
+// make `p-$i`
+@mixin p ($spacer) {
+  padding: get-spacer($spacer);
+};
+
+// make `px-$i`
+@mixin px ($spacer) {
+  padding: {
+    left: get-spacer($spacer);
+    right: get-spacer($spacer);
+  }
+};
+
+// make `py-$i`
+@mixin py ($spacer) {
+  padding: {
+    top: get-spacer($spacer);
+    bottom: get-spacer($spacer);
+  }
+};
+
+// make `pt-$i`
+@mixin pt ($spacer) {
+  padding: {
+    top: get-spacer($spacer);
+  }
+};
+
+// make `pb-$i`
+@mixin pb ($spacer) {
+  padding: {
+    bottom: get-spacer($spacer);
+  }
+};
+
+// make `pl-$i`
+@mixin pl ($spacer) {
+  padding: {
+    left: get-spacer($spacer);
+  }
+};
+
+// make `pr-$i`
+@mixin pr ($spacer) {
+  padding: {
+    right: get-spacer($spacer);
+  }
+};
+
+// Margin
+
+// make `m-$i`
+@mixin m ($spacer) {
+  margin: get-spacer($spacer);
+};
+
+// make `mx-$i`
+@mixin mx ($spacer) {
+  margin: {
+    left: get-spacer($spacer);
+    right: get-spacer($spacer);
+  }
+};
+
+// // make `my-$i`
+@mixin my ($spacer) {
+  margin: {
+    top: get-spacer($spacer);
+    bottom: get-spacer($spacer);
+  }
+};
+
+// make `mt-$i`
+@mixin mt ($spacer) {
+  margin: {
+    top: get-spacer($spacer);
+  }
+};
+
+// make `mb-$i`
+@mixin mb ($spacer) {
+  margin: {
+    bottom: get-spacer($spacer);
+  }
+};
+
+// make `ml-$i`
+@mixin ml ($spacer) {
+  margin: {
+    left: get-spacer($spacer);
+  }
+};
+
+// make `mr-$i`
+@mixin mr ($spacer) {
+  margin: {
+    right: get-spacer($spacer);
+  }
+};
+
+// make `mx-auto`
+@mixin mx-auto {
+  margin: {
+    left: auto;
+    right: auto;
+  }
+};
+
+// make `my-auto`
+@mixin my-auto {
+  margin: {
+    top: auto;
+    bottom: auto;
+  }
+};

@@ -3,85 +3,85 @@
 // Utilities for controlling the display box type of an element.
 
 @include make-component('flex') {
-  display: flex;
+  @include flex;
 }
 
 @include make-component('grid') {
-  display: grid;
+  @include grid;
 }
 
 @include make-component('block') {
-  display: block;
+  @include block;
 }
 
 @include make-component('hidden') {
-  display: none;
+  @include hidden;
 }
 
 @include make-component('table') {
-  display: table;
+  @include table;
 }
 
 @include make-component('table-caption') {
-  display: table-caption;
+  @include table-caption;
 }
 
 @include make-component('table-cell') {
-  display: table-cell;
+  @include table-cell;
 }
 
 @include make-component('table-column') {
-  display: table-column;
+  @include table-column;
 }
 
 @include make-component('table-column-group') {
-  display: table-column-group;
+  @include table-column-group;
 }
 
 @include make-component('table-footer-group') {
-  display: table-footer-group;
+  @include table-footer-group;
 }
 
 @include make-component('table-header-group') {
-  display: table-header-group;
+  @include table-header-group;
 }
 
 @include make-component('table-row-group') {
-  display: table-row-group;
+  @include table-row-group;
 }
 
 @include make-component('table-row') {
-  display: table-row;
+  @include table-row;
 }
 
 @include make-component('flow-root') {
-  display: flow-root;
+  @include flow-root;
 }
 
 @include make-component('contents') {
-  display: contents;
+  @include contents;
 }
 
 @include make-component('list-item') {
-  display: list-item;
+  @include list-item;
 }
 
 @include make-component('inline') {
-  display: inline;
+  @include inline;
 
   &-flex {
-    display: inline-flex;
+    @include inline-flex;
   }
 
   &-grid {
-    display: inline-grid;
+    @include inline-grid;
   }
 
   &-block {
-    display: inline-block;
+    @include inline-block;
   }
 
   &-table {
-    display: inline-table;
+    @include inline-table;
   }
 }

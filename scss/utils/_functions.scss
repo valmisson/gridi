@@ -14,6 +14,15 @@
   @return if(get-breakpoint($name, $breakpoints) == null, '', '#{$name}\\:');
 }
 
+// Get spacers size
+@function get-spacer($position, $spacers: $spacers) {
+  @if $position > length($spacers) {
+    @warn "Size #{$position} not found in spacers.";
+  }
+
+  @return map.get($spacers, $position);
+}
+
 // Convert px to rem
 
 @function to-rem($pixel) {

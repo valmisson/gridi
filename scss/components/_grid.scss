@@ -5,40 +5,40 @@
 @include make-component('grid') {
   &-cols {
     &-none {
-      grid-template-columns: none;
+      @include grid-cols-none;
     }
 
     // make component `.grid-cols-$i`
     @include make-sort-component using ($i) {
-      grid-template-columns: repeat($i, minmax(0, 1fr));
+      @include grid-cols($i);
     }
   }
 
   &-rows {
     &-none {
-      grid-template-rows: none;
+      @include grid-rows-none;
     }
 
     // make component `.grid-rows-$i`
     @include make-sort-component($end: math.div($columns, 2)) using ($i) {
-      grid-template-rows: repeat($i, minmax(0, 1fr));
+      @include grid-rows($i);
     }
   }
 
   &-flow {
     &-row {
-      grid-auto-flow: row;
+      @include grid-flow-row;
 
       &-dense {
-        grid-auto-flow: row dense;
+        @include grid-flow-row-dense;
       }
     }
 
     &-col {
-      grid-auto-flow: column;
+      @include grid-flow-col;
 
       &-dense {
-        grid-auto-flow: column dense;
+        @include grid-flow-col-dense;
       }
     }
   }
@@ -48,39 +48,39 @@
 
 @include make-component('col') {
   &-auto {
-    grid-column: auto;
+    @include col-auto;
   }
 
   &-span {
     &-full {
-      grid-column: list.slash(1, -1);
+      @include col-span-full;
     }
 
     // make component `.col-span-$i`
     @include make-sort-component using ($i) {
-      grid-column: list.slash(span $i, span $i);
+      @include col-span($i);
     }
   }
 
   &-start {
     &-auto {
-      grid-column-start: auto;
+      @include col-start-auto;
     }
 
     // make component `.col-start-$i`
     @include make-sort-component($end: $columns + 1) using ($i) {
-      grid-column-start: $i;
+      @include col-start($i);
     }
   }
 
   &-end {
     &-auto {
-      grid-column-end: auto;
+      @include col-end-auto;
     }
 
     // make component `.col-end-$i`
     @include make-sort-component($end: $columns + 1) using ($i) {
-      grid-column-end: $i;
+      @include col-end($i);
     }
   }
 }
@@ -89,80 +89,79 @@
 
 @include make-component('row') {
   &-auto {
-    grid-row: auto;
+    @include row-auto;
   }
 
   &-span {
     &-full {
-      grid-row: list.slash(1, -1);
+      @include row-span-full;
     }
 
     // make component `.row-span-$i`
     @include make-sort-component($end: math.div($columns, 2)) using ($i) {
-      grid-row: list.slash(span $i, span $i);
+      @include row-span($i);
     }
   }
 
   &-start {
     &-auto {
-      grid-row-start: auto;
+      @include row-start-auto;
     }
 
     // make component `.row-start-$i`
     @include make-sort-component($end: math.div($columns, 2) + 1) using ($i) {
-      grid-row-start: $i;
+      @include row-start($i);
     }
   }
 
   &-end {
     &-auto {
-      grid-row-end: auto;
+      @include row-end-auto;
     }
 
     // make component `.row-end-$i`
     @include make-sort-component($end: math.div($columns, 2) + 1) using ($i) {
-      grid-row-end: $i;
+      @include row-end($i);
     }
   }
 }
-
 
 // Grid Auto Columns
 
 @include make-component('auto') {
   &-cols {
     &-auto {
-      grid-auto-columns: auto;
+      @include auto-cols-auto;
     }
 
     &-min {
-      grid-auto-columns: min-content;
+      @include auto-cols-min;
     }
 
     &-max {
-      grid-auto-columns: max-content;
+      @include auto-cols-max;
     }
 
     &-fr {
-      grid-auto-columns: minmax(0, 1fr);
+      @include auto-cols-fr;
     }
   }
 
   &-rows {
     &-auto {
-      grid-auto-rows: auto;
+      @include auto-rows-auto;
     }
 
     &-min {
-      grid-auto-rows: min-content;
+      @include auto-rows-min;
     }
 
     &-max {
-      grid-auto-rows: max-content;
+      @include auto-rows-max;
     }
 
     &-fr {
-      grid-auto-rows: minmax(0, 1fr);
+      @include auto-rows-fr;
     }
   }
 }
@@ -172,71 +171,71 @@
 @include make-component('place') {
   &-content {
     &-center {
-      place-content: center;
+      @include place-content-center;
     }
 
     &-start {
-      place-content: start;
+      @include place-content-start;
     }
 
     &-end {
-      place-content: end;
+      @include place-content-end;
     }
 
     &-between {
-      place-content: space-between;
+      @include place-content-between;
     }
 
     &-around {
-      place-content: space-around;
+      @include place-content-around;
     }
 
     &-evenly {
-      place-content: space-evenly;
+      @include place-content-evenly;
     }
 
     &-stretch {
-      place-content: stretch;
+      @include place-content-stretch;
     }
   }
 
   &-items {
     &-start {
-      place-items: start;
+      @include place-items-start;
     }
 
     &-end {
-      place-items: end;
+      @include place-items-end;
     }
 
     &-center {
-      place-items: center;
+      @include place-items-center;
     }
 
     &-stretch {
-      place-items: stretch;
+      @include place-items-stretch;
     }
   }
 
   &-self {
     &-auto {
-      place-self: auto;
+      @include place-self-auto;
     }
 
     &-start {
-      place-self: start;
+      @include place-self-start;
     }
 
     &-end {
-      place-self: end;
+      @include place-self-end;
     }
 
     &-center {
-      place-self: center;
+      @include place-self-center;
     }
 
     &-stretch {
-      place-self: stretch;
+      @include place-self-stretch;
     }
   }
 }

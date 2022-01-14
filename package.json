@@ -12,11 +12,11 @@
     "scss/**/*.scss"
   ],
   "scripts": {
-    "scss": "sass scss/gridi.scss dist/gridi.css --style expanded --embed-sources",
+    "scss": "sass scss/gridi-components.scss dist/gridi.css --style expanded --embed-sources",
     "minify": "cleancss -O1 --format breakWith=lf --with-rebase --source-map --source-map-inline-sources --output dist/ --batch --batch-suffix \".min\" \"dist/*.css\" \"!dist/*.min.css\"",
     "prefix": "postcss --replace dist/gridi.css",
     "build": "run-s scss prefix minify",
-    "watch": "sass scss/gridi.scss dist/gridi.css --watch",
+    "watch": "sass scss/gridi-components.scss dist/gridi.css --watch",
     "version": "npm run build && conventional-changelog -p angular -i CHANGELOG.md -s -r 1 && git add .",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",

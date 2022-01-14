@@ -7,17 +7,17 @@
 @include make-component('gap') {
   // make component `.gap-$i`
   @include make-spacing using ($spacer) {
-    gap: $spacer;
+    @include gap($spacer)
   };
 
   // make component `.gap-x-$i`
   @include make-spacing('-x') using ($spacer) {
-    column-gap: $spacer;
+    @include gap-x($spacer);
   };
 
   // // make component `.gap-y-$i`
   @include make-spacing('-y') using ($spacer) {
-    row-gap: $spacer;
+    @include gap-y($spacer);
   };
 }
 
@@ -26,51 +26,37 @@
 @include make-component('p') {
   // make component `.p-$i`
   @include make-spacing using ($spacer) {
-    padding: $spacer;
+    @include p($spacer);
   };
 
   // make component `.px-$i`
   @include make-spacing('x') using ($spacer) {
-    padding: {
-      left: $spacer;
-      right: $spacer;
-    }
+    @include px($spacer);
   };
 
   // make component `.py-$i`
   @include make-spacing('y') using ($spacer) {
-    padding: {
-      top: $spacer;
-      bottom: $spacer;
-    }
+    @include py($spacer);
   };
 
   // make component `.pt-$i`
   @include make-spacing('t') using ($spacer) {
-    padding: {
-      top: $spacer;
-    }
+    @include pt($spacer);
   };
 
   // make component `.pb-$i`
   @include make-spacing('b') using ($spacer) {
-    padding: {
-      bottom: $spacer;
-    }
+    @include pb($spacer);
   };
 
   // make component `.pl-$i`
   @include make-spacing('l') using ($spacer) {
-    padding: {
-      left: $spacer;
-    }
+    @include pl($spacer);
   };
 
   // make component `.pr-$i`
   @include make-spacing('r') using ($spacer) {
-    padding: {
-      right: $spacer;
-    }
+    @include pr($spacer);
   };
 }
 
@@ -79,66 +65,46 @@
 @include make-component('m') {
   // make component `.m-$i`
   @include make-spacing using ($spacer) {
-    margin: $spacer;
+    @include m($spacer);
   };
 
   // make component `.mx-$i`
   @include make-spacing('x') using ($spacer) {
-    margin: {
-      left: $spacer;
-      right: $spacer;
-    }
+    @include mx($spacer);
   };
 
   // // make component `.my-$i`
   @include make-spacing('y') using ($spacer) {
-    margin: {
-      top: $spacer;
-      bottom: $spacer;
-    }
+    @include my($spacer);
   };
 
   // make component `.mt-$i`
   @include make-spacing('t') using ($spacer) {
-    margin: {
-      top: $spacer;
-    }
+    @include mt($spacer);
   };
 
   // make component `.mb-$i`
   @include make-spacing('b') using ($spacer) {
-    margin: {
-      bottom: $spacer;
-    }
+    @include mb($spacer);
   };
 
   // make component `.ml-$i`
   @include make-spacing('l') using ($spacer) {
-    margin: {
-      left: $spacer;
-    }
+    @include ml($spacer);
   };
 
   // make component `.mr-$i`
   @include make-spacing('r') using ($spacer) {
-    margin: {
-      right: $spacer;
-    }
+    @include mr($spacer);
   };
 
   // make component `.mx-auto`
   &#{'x-auto'} {
-    margin: {
-      left: auto;
-      right: auto;
-    }
+    @include mx-auto;
   };
 
   // make component `.my-auto`
   &#{'y-auto'} {
-    margin: {
-      top: auto;
-      bottom: auto;
-    }
+    @include my-auto;
   };
 }

@@ -20,11 +20,8 @@
 // mixins
 @import 'mixins/utilities';
 @import 'mixins/component';
-
-// components
-@import 'components/base';
-@import 'components/container';
-@import 'components/display';
-@import 'components/flex';
-@import 'components/grid';
-@import 'components/spacing';
+@import 'mixins/container';
+@import 'mixins/display';
+@import 'mixins/flex';
+@import 'mixins/grid';
+@import 'mixins/spacing';

@@ -4,70 +4,70 @@
 
 @include make-component('flex') {
   &-1 {
-    flex: 1 1 0%;
+    @include flex-1;
   }
 
   &-auto {
-    flex: 1 1 auto;
+    @include flex-auto;
   }
 
   &-initial {
-    flex: 0 1 auto;
+    @include flex-initial;
   }
 
   &-none {
-    flex: none;
+    @include flex-none;
   }
 
   // Flex Wrap
 
   &-wrap {
-    flex-wrap: wrap;
+    @include flex-wrap;
 
     &-reverse {
-      flex-wrap: wrap-reverse;
+      @include flex-wrap-reverse;
     }
   }
 
   &-nowrap {
-    flex-wrap: nowrap;
+    @include flex-nowrap;
   }
 
   // Flex Grow
 
   &-grow {
-    flex-grow: 1;
+    @include flex-grow;
 
     &-0 {
-      flex-grow: 0;
+      @include flex-grow-0;
     }
   }
 
   // Flex Shrink
 
   &-shrink {
-    flex-shrink: 1;
+    @include flex-shrink;
 
     &-0 {
-      flex-shrink: 0;
+      @include flex-shrink-0;
     }
   }
 
   // Flex Direction
 
   &-row {
-    flex-direction: row;
+    @include flex-row;
 
     &-reverse {
-      flex-direction: row-reverse;
+      @include flex-row-reverse;
     }
   }
 
   &-col {
-    flex-direction: column;
+    @include flex-col;
 
     &-reverse {
-      flex-direction: column-reverse;
+      @include flex-col-reverse;
     }
   }
 }
@@ -78,46 +78,46 @@
   // Justify content
 
   &-start {
-    justify-content: flex-start;
+    @include justify-start;
   }
 
   &-end {
-    justify-content: flex-end;
+    @include justify-end;
   }
 
   &-center {
-    justify-content: center;
+    @include justify-center;
   }
 
   &-between {
-    justify-content: space-between;
+    @include justify-between;
   }
 
   &-around {
-    justify-content: space-around;
+    @include justify-around;
   }
 
   &-evenly {
-    justify-content: space-evenly;
+    @include justify-evenly;
   }
 
   // Justify Items
 
   &-items {
     &-start {
-      justify-items: start;
+      @include justify-items-start;
     }
 
     &-end {
-      justify-items: end;
+      @include justify-items-end;
     }
 
     &-center {
-      justify-items: center;
+      @include justify-items-center;
     }
 
     &-stretch {
-      justify-items: stretch;
+      @include justify-items-stretch;
     }
   }
 
@@ -125,23 +125,23 @@
 
   &-self {
     &-auto {
-      justify-self: auto;
+      @include justify-self-auto;
     }
 
     &-start {
-      justify-self: start;
+      @include justify-self-start;
     }
 
     &-end {
-      justify-self: end;
+      @include justify-self-end;
     }
 
     &-center {
-      justify-self: center;
+      @include justify-self-center;
     }
 
     &-stretch {
-      justify-self: stretch;
+      @include justify-self-stretch;
     }
   }
 }
@@ -152,50 +152,50 @@
   // Align Content
 
   &-center {
-    align-content: center;
+    @include align-center;
   }
 
   &-start {
-    align-content: flex-start;
+    @include align-start;
   }
 
   &-end {
-    align-content: flex-end;
+    @include align-end;
   }
 
   &-between {
-    align-content: space-between;
+    @include align-between;
   }
 
   &-around {
-    align-content: space-around;
+    @include align-around;
   }
 
   &-evenly {
-    align-content: space-evenly;
+    @include align-evenly;
   }
 
   // Align Items
 
   &-items {
     &-start {
-      align-items: flex-start;
+      @include align-items-start;
     }
 
     &-end {
-      align-items: flex-end;
+      @include align-items-end;
     }
 
     &-center {
-      align-items: center;
+      @include align-items-center;
     }
 
     &-baseline {
-      align-items: baseline;
+      @include align-items-baseline;
     }
 
     &-stretch {
-      align-items: stretch;
+      @include align-items-stretch;
     }
   }
 
@@ -203,23 +203,23 @@
 
   &-self {
     &-auto {
-      align-self: auto;
+      @include align-self-auto;
     }
 
     &-start {
-      align-self: flex-start;
+      @include align-self-start;
     }
 
     &-end {
-      align-self: flex-end;
+      @include align-self-end;
     }
 
     &-center {
-      align-self: center;
+      @include align-self-center;
     }
 
     &-stretch {
-      align-self: stretch;
+      @include align-self-stretch;
     }
   }
 }
@@ -228,19 +228,19 @@
 
 @include make-component('order') {
   &-first {
-    order: -9999;
+    @include order-first;
   }
 
   &-last {
-    order: 9999;
+    @include order-last;
   }
 
   &-none {
-    order: 0;
+    @include order-none;
   }
 
   // make component `.order-$i`
   @include make-sort-component using ($i) {
-    order: $i;
+    @include order($i);
   }
 }
