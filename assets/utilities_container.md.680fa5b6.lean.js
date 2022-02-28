@@ -1,0 +1,1 @@
+import{_ as t,c as a,o as n,a as e}from"./app.b21a3055.js";const h='{"title":"Container","description":"","frontmatter":{"sidebarDepth":2},"headers":[{"level":2,"title":"Usage","slug":"usage"}],"relativePath":"utilities/container.md"}',s={},l=e("",8),p=[l];function o(i,d,c,r,u,x){return n(),a("div",null,p)}var f=t(s,[["render",o]]);export{h as __pageData,f as default};
