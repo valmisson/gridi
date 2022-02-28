@@ -21,17 +21,17 @@
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:deploy": "run-s docs:build gh-pages",
-    "gh-pages": "push-dir --dir=docs/.vitepress/dist --branch=gh-pages --cleanup --verbose",
+    "gh-pages": "gh-pages -d docs/.vitepress/dist",
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "autoprefixer": "10.4.2",
     "clean-css-cli": "^5.5.2",
     "conventional-changelog-cli": "^2.2.2",
+    "gh-pages": "^3.2.3",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.7",
     "postcss-cli": "^9.1.0",
-    "push-dir": "^0.4.1",
     "sass": "^1.49.9",
     "vitepress": "^0.22.3"
   },
