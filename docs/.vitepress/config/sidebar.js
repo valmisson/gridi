@@ -2,13 +2,13 @@ module.exports = {
   '/guide/': [
     {
       text: 'Getting Started',
-      children: [
+      items: [
         { text: 'Installation', link: '/guide/installation' }
       ]
     },
     {
       text: 'Core concepts',
-      children: [
+      items: [
         { text: 'Responsive Design', link: '/guide/responsive-design' }
       ]
     }
@@ -16,7 +16,7 @@ module.exports = {
   '/utilities/': [
     {
       text: 'Utilities',
-      children: [
+      items: [
         { text: 'Container', link: '/utilities/container' },
         { text: 'Display', link: '/utilities/display' },
         { text: 'Flex', link: '/utilities/flex' },

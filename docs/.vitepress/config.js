@@ -6,7 +6,16 @@ module.exports = {
   description: 'A modern utility Grid System',
 
   head,
+  themeConfig,
+
   base: '/gridi/',
   srcExclude: ['README.md'],
-  themeConfig
+  lastUpdated: true,
+  cleanUrls: 'without-subfolders',
+
+  markdown: {
+    headers: {
+      level: [0, 0]
+    }
+  }
 }

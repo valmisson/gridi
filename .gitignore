@@ -26,3 +26,7 @@ npm-debug.log*
 
 # Optional editor config
 .vscode
+
+
+# vitepress
+cache/
