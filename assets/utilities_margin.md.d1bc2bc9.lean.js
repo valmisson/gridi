@@ -1,1 +1,0 @@
-import{_ as s,o as a,c as t,d as e}from"./app.023e1d6b.js";const m=JSON.parse('{"title":"Margin","description":"","frontmatter":{},"headers":[],"relativePath":"utilities/margin.md","lastUpdated":1635373989000}'),l={name:"utilities/margin.md"},n=e("",20),o=[n];function p(r,c,i,d,y,D){return a(),t("div",null,o)}const g=s(l,[["render",p]]);export{m as __pageData,g as default};

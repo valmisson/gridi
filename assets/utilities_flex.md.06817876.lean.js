@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as n,a as l}from"./app.5eec1f9b.js";const h=JSON.parse('{"title":"Flex","description":"","frontmatter":{},"headers":[],"relativePath":"utilities/flex.md","lastUpdated":1635370920000}'),t={name:"utilities/flex.md"},o=l("",19),e=[o];function p(c,r,i,D,F,y){return n(),a("div",null,e)}const g=s(t,[["render",p]]);export{h as __pageData,g as default};

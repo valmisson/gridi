@@ -1,1 +1,0 @@
-import{_ as s,o as a,c as t,d as e}from"./app.023e1d6b.js";const g=JSON.parse('{"title":"Padding","description":"","frontmatter":{},"headers":[],"relativePath":"utilities/padding.md","lastUpdated":1635373989000}'),n={name:"utilities/padding.md"},l=e("",20),o=[l];function p(d,c,i,r,D,F){return a(),t("div",null,o)}const h=s(n,[["render",p]]);export{g as __pageData,h as default};

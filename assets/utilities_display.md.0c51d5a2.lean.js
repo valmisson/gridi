@@ -1,1 +1,0 @@
-import{_ as s,o as l,c as t,d as a}from"./app.023e1d6b.js";const g=JSON.parse('{"title":"Display","description":"","frontmatter":{},"headers":[],"relativePath":"utilities/display.md","lastUpdated":1635370920000}'),e={name:"utilities/display.md"},n=a("",31),o=[n];function p(c,r,i,d,y,D){return l(),t("div",null,o)}const h=s(e,[["render",p]]);export{g as __pageData,h as default};
