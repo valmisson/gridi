@@ -1,3 +1,7 @@
+## [2.1.6](https://github.com/valmisson/gridi/compare/v2.1.5...v2.1.6) (2024-10-04)
+
+
+
 ## [2.1.5](https://github.com/valmisson/gridi/compare/v2.1.4...v2.1.5) (2023-10-22)
 
 
