@@ -1,3 +1,18 @@
+# [2.2.0](https://github.com/valmisson/gridi/compare/v2.1.6...v2.2.0) (2025-01-28)
+
+
+### Features
+
+* add support to sass v2 ([d47f688](https://github.com/valmisson/gridi/commit/d47f688354fc6f3bcf41a4bdb7c542d29f9b49a3))
+
+
+### BREAKING CHANGES
+
+* remove `gridi-components.scss` and add components to `gridi.scss`
+* replace `@import` to `@use`
+
+
+
 ## [2.1.6](https://github.com/valmisson/gridi/compare/v2.1.5...v2.1.6) (2024-10-04)
 
 
