@@ -2,86 +2,89 @@
 //
 // Utilities for controlling the display box type of an element.
 
-@include make-component('flex') {
-  @include flex;
+@use '../mixins/utilities';
+@use '../mixins/display';
+
+@include utilities.make-component('flex') {
+  @include display.flex;
 }
 
-@include make-component('grid') {
-  @include grid;
+@include utilities.make-component('grid') {
+  @include display.grid;
 }
 
-@include make-component('block') {
-  @include block;
+@include utilities.make-component('block') {
+  @include display.block;
 }
 
-@include make-component('hidden') {
-  @include hidden;
+@include utilities.make-component('hidden') {
+  @include display.hidden;
 }
 
-@include make-component('table') {
-  @include table;
+@include utilities.make-component('table') {
+  @include display.table;
 }
 
-@include make-component('table-caption') {
-  @include table-caption;
+@include utilities.make-component('table-caption') {
+  @include display.table-caption;
 }
 
-@include make-component('table-cell') {
-  @include table-cell;
+@include utilities.make-component('table-cell') {
+  @include display.table-cell;
 }
 
-@include make-component('table-column') {
-  @include table-column;
+@include utilities.make-component('table-column') {
+  @include display.table-column;
 }
 
-@include make-component('table-column-group') {
-  @include table-column-group;
+@include utilities.make-component('table-column-group') {
+  @include display.table-column-group;
 }
 
-@include make-component('table-footer-group') {
-  @include table-footer-group;
+@include utilities.make-component('table-footer-group') {
+  @include display.table-footer-group;
 }
 
-@include make-component('table-header-group') {
-  @include table-header-group;
+@include utilities.make-component('table-header-group') {
+  @include display.table-header-group;
 }
 
-@include make-component('table-row-group') {
-  @include table-row-group;
+@include utilities.make-component('table-row-group') {
+  @include display.table-row-group;
 }
 
-@include make-component('table-row') {
-  @include table-row;
+@include utilities.make-component('table-row') {
+  @include display.table-row;
 }
 
-@include make-component('flow-root') {
-  @include flow-root;
+@include utilities.make-component('flow-root') {
+  @include display.flow-root;
 }
 
-@include make-component('contents') {
-  @include contents;
+@include utilities.make-component('contents') {
+  @include display.contents;
 }
 
-@include make-component('list-item') {
-  @include list-item;
+@include utilities.make-component('list-item') {
+  @include display.list-item;
 }
 
-@include make-component('inline') {
-  @include inline;
+@include utilities.make-component('inline') {
+  @include display.inline;
 
   &-flex {
-    @include inline-flex;
+    @include display.inline-flex;
   }
 
   &-grid {
-    @include inline-grid;
+    @include display.inline-grid;
   }
 
   &-block {
-    @include inline-block;
+    @include display.inline-block;
   }
 
   &-table {
-    @include inline-table;
+    @include display.inline-table;
   }
 }

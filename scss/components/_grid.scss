@@ -2,43 +2,49 @@
 //
 // Utilities of Grid Layout
 
-@include make-component('grid') {
+@use 'sass:math';
+
+@use '../utils/variables';
+@use '../mixins/utilities';
+@use '../mixins/grid';
+
+@include utilities.make-component('grid') {
   &-cols {
     &-none {
-      @include grid-cols-none;
+      @include grid.grid-cols-none;
     }
 
     // make component `.grid-cols-$i`
-    @include make-sort-component using ($i) {
-      @include grid-cols($i);
+    @include utilities.make-sort-component using ($i) {
+      @include grid.grid-cols($i);
     }
   }
 
   &-rows {
     &-none {
-      @include grid-rows-none;
+      @include grid.grid-rows-none;
     }
 
     // make component `.grid-rows-$i`
-    @include make-sort-component($end: math.div($columns, 2)) using ($i) {
-      @include grid-rows($i);
+    @include utilities.make-sort-component($end: math.div(variables.$columns, 2)) using ($i) {
+      @include grid.grid-rows($i);
     }
   }
 
   &-flow {
     &-row {
-      @include grid-flow-row;
+      @include grid.grid-flow-row;
 
       &-dense {
-        @include grid-flow-row-dense;
+        @include grid.grid-flow-row-dense;
       }
     }
 
     &-col {
-      @include grid-flow-col;
+      @include grid.grid-flow-col;
 
       &-dense {
-        @include grid-flow-col-dense;
+        @include grid.grid-flow-col-dense;
       }
     }
   }
@@ -46,196 +52,196 @@
 
 // Grid Column
 
-@include make-component('col') {
+@include utilities.make-component('col') {
   &-auto {
-    @include col-auto;
+    @include grid.col-auto;
   }
 
   &-span {
     &-full {
-      @include col-span-full;
+      @include grid.col-span-full;
     }
 
     // make component `.col-span-$i`
-    @include make-sort-component using ($i) {
-      @include col-span($i);
+    @include utilities.make-sort-component using ($i) {
+      @include grid.col-span($i);
     }
   }
 
   &-start {
     &-auto {
-      @include col-start-auto;
+      @include grid.col-start-auto;
     }
 
     // make component `.col-start-$i`
-    @include make-sort-component($end: $columns + 1) using ($i) {
-      @include col-start($i);
+    @include utilities.make-sort-component($end: variables.$columns + 1) using ($i) {
+      @include grid.col-start($i);
     }
   }
 
   &-end {
     &-auto {
-      @include col-end-auto;
+      @include grid.col-end-auto;
     }
 
     // make component `.col-end-$i`
-    @include make-sort-component($end: $columns + 1) using ($i) {
-      @include col-end($i);
+    @include utilities.make-sort-component($end: variables.$columns + 1) using ($i) {
+      @include grid.col-end($i);
     }
   }
 }
 
 // Grid Row
 
-@include make-component('row') {
+@include utilities.make-component('row') {
   &-auto {
-    @include row-auto;
+    @include grid.row-auto;
   }
 
   &-span {
     &-full {
-      @include row-span-full;
+      @include grid.row-span-full;
     }
 
     // make component `.row-span-$i`
-    @include make-sort-component($end: math.div($columns, 2)) using ($i) {
-      @include row-span($i);
+    @include utilities.make-sort-component($end: math.div(variables.$columns, 2)) using ($i) {
+      @include grid.row-span($i);
     }
   }
 
   &-start {
     &-auto {
-      @include row-start-auto;
+      @include grid.row-start-auto;
     }
 
     // make component `.row-start-$i`
-    @include make-sort-component($end: math.div($columns, 2) + 1) using ($i) {
-      @include row-start($i);
+    @include utilities.make-sort-component($end: math.div(variables.$columns, 2) + 1) using ($i) {
+      @include grid.row-start($i);
     }
   }
 
   &-end {
     &-auto {
-      @include row-end-auto;
+      @include grid.row-end-auto;
     }
 
     // make component `.row-end-$i`
-    @include make-sort-component($end: math.div($columns, 2) + 1) using ($i) {
-      @include row-end($i);
+    @include utilities.make-sort-component($end: math.div(variables.$columns, 2) + 1) using ($i) {
+      @include grid.row-end($i);
     }
   }
 }
 
 // Grid Auto Columns
 
-@include make-component('auto') {
+@include utilities.make-component('auto') {
   &-cols {
     &-auto {
-      @include auto-cols-auto;
+      @include grid.auto-cols-auto;
     }
 
     &-min {
-      @include auto-cols-min;
+      @include grid.auto-cols-min;
     }
 
     &-max {
-      @include auto-cols-max;
+      @include grid.auto-cols-max;
     }
 
     &-fr {
-      @include auto-cols-fr;
+      @include grid.auto-cols-fr;
     }
   }
 
   &-rows {
     &-auto {
-      @include auto-rows-auto;
+      @include grid.auto-rows-auto;
     }
 
     &-min {
-      @include auto-rows-min;
+      @include grid.auto-rows-min;
     }
 
     &-max {
-      @include auto-rows-max;
+      @include grid.auto-rows-max;
     }
 
     &-fr {
-      @include auto-rows-fr;
+      @include grid.auto-rows-fr;
     }
   }
 }
 
 // Place Content
 
-@include make-component('place') {
+@include utilities.make-component('place') {
   &-content {
     &-center {
-      @include place-content-center;
+      @include grid.place-content-center;
     }
 
     &-start {
-      @include place-content-start;
+      @include grid.place-content-start;
     }
 
     &-end {
-      @include place-content-end;
+      @include grid.place-content-end;
     }
 
     &-between {
-      @include place-content-between;
+      @include grid.place-content-between;
     }
 
     &-around {
-      @include place-content-around;
+      @include grid.place-content-around;
     }
 
     &-evenly {
-      @include place-content-evenly;
+      @include grid.place-content-evenly;
     }
 
     &-stretch {
-      @include place-content-stretch;
+      @include grid.place-content-stretch;
     }
   }
 
   &-items {
     &-start {
-      @include place-items-start;
+      @include grid.place-items-start;
     }
 
     &-end {
-      @include place-items-end;
+      @include grid.place-items-end;
     }
 
     &-center {
-      @include place-items-center;
+      @include grid.place-items-center;
     }
 
     &-stretch {
-      @include place-items-stretch;
+      @include grid.place-items-stretch;
     }
   }
 
   &-self {
     &-auto {
-      @include place-self-auto;
+      @include grid.place-self-auto;
     }
 
     &-start {
-      @include place-self-start;
+      @include grid.place-self-start;
     }
 
     &-end {
-      @include place-self-end;
+      @include grid.place-self-end;
     }
 
     &-center {
-      @include place-self-center;
+      @include grid.place-self-center;
     }
 
     &-stretch {
-      @include place-self-stretch;
+      @include grid.place-self-stretch;
     }
   }
 }

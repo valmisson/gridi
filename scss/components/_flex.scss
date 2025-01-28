@@ -2,122 +2,125 @@
 //
 // Utilities of flexbox
 
-@include make-component('flex') {
+@use '../mixins/utilities';
+@use '../mixins/flex';
+
+@include utilities.make-component('flex') {
   &-1 {
-    @include flex-1;
+    @include flex.flex-1;
   }
 
   &-auto {
-    @include flex-auto;
+    @include flex.flex-auto;
   }
 
   &-initial {
-    @include flex-initial;
+    @include flex.flex-initial;
   }
 
   &-none {
-    @include flex-none;
+    @include flex.flex-none;
   }
 
   // Flex Wrap
 
   &-wrap {
-    @include flex-wrap;
+    @include flex.flex-wrap;
 
     &-reverse {
-      @include flex-wrap-reverse;
+      @include flex.flex-wrap-reverse;
     }
   }
 
   &-nowrap {
-    @include flex-nowrap;
+    @include flex.flex-nowrap;
   }
 
   // Flex Grow
 
   &-grow {
-    @include flex-grow;
+    @include flex.flex-grow;
 
     &-0 {
-      @include flex-grow-0;
+      @include flex.flex-grow-0;
     }
   }
 
   // Flex Shrink
 
   &-shrink {
-    @include flex-shrink;
+    @include flex.flex-shrink;
 
     &-0 {
-      @include flex-shrink-0;
+      @include flex.flex-shrink-0;
     }
   }
 
   // Flex Direction
 
   &-row {
-    @include flex-row;
+    @include flex.flex-row;
 
     &-reverse {
-      @include flex-row-reverse;
+      @include flex.flex-row-reverse;
     }
   }
 
   &-col {
-    @include flex-col;
+    @include flex.flex-col;
 
     &-reverse {
-      @include flex-col-reverse;
+      @include flex.flex-col-reverse;
     }
   }
 }
 
 // Justify
 
-@include make-component('justify') {
+@include utilities.make-component('justify') {
   // Justify content
 
   &-start {
-    @include justify-start;
+    @include flex.justify-start;
   }
 
   &-end {
-    @include justify-end;
+    @include flex.justify-end;
   }
 
   &-center {
-    @include justify-center;
+    @include flex.justify-center;
   }
 
   &-between {
-    @include justify-between;
+    @include flex.justify-between;
   }
 
   &-around {
-    @include justify-around;
+    @include flex.justify-around;
   }
 
   &-evenly {
-    @include justify-evenly;
+    @include flex.justify-evenly;
   }
 
   // Justify Items
 
   &-items {
     &-start {
-      @include justify-items-start;
+      @include flex.justify-items-start;
     }
 
     &-end {
-      @include justify-items-end;
+      @include flex.justify-items-end;
     }
 
     &-center {
-      @include justify-items-center;
+      @include flex.justify-items-center;
     }
 
     &-stretch {
-      @include justify-items-stretch;
+      @include flex.justify-items-stretch;
     }
   }
 
@@ -125,77 +128,77 @@
 
   &-self {
     &-auto {
-      @include justify-self-auto;
+      @include flex.justify-self-auto;
     }
 
     &-start {
-      @include justify-self-start;
+      @include flex.justify-self-start;
     }
 
     &-end {
-      @include justify-self-end;
+      @include flex.justify-self-end;
     }
 
     &-center {
-      @include justify-self-center;
+      @include flex.justify-self-center;
     }
 
     &-stretch {
-      @include justify-self-stretch;
+      @include flex.justify-self-stretch;
     }
   }
 }
 
 // Aligns
 
-@include make-component('align') {
+@include utilities.make-component('align') {
   // Align Content
 
   &-center {
-    @include align-center;
+    @include flex.align-center;
   }
 
   &-start {
-    @include align-start;
+    @include flex.align-start;
   }
 
   &-end {
-    @include align-end;
+    @include flex.align-end;
   }
 
   &-between {
-    @include align-between;
+    @include flex.align-between;
   }
 
   &-around {
-    @include align-around;
+    @include flex.align-around;
   }
 
   &-evenly {
-    @include align-evenly;
+    @include flex.align-evenly;
   }
 
   // Align Items
 
   &-items {
     &-start {
-      @include align-items-start;
+      @include flex.align-items-start;
     }
 
     &-end {
-      @include align-items-end;
+      @include flex.align-items-end;
     }
 
     &-center {
-      @include align-items-center;
+      @include flex.align-items-center;
     }
 
     &-baseline {
-      @include align-items-baseline;
+      @include flex.align-items-baseline;
     }
 
     &-stretch {
-      @include align-items-stretch;
+      @include flex.align-items-stretch;
     }
   }
 
@@ -203,44 +206,44 @@
 
   &-self {
     &-auto {
-      @include align-self-auto;
+      @include flex.align-self-auto;
     }
 
     &-start {
-      @include align-self-start;
+      @include flex.align-self-start;
     }
 
     &-end {
-      @include align-self-end;
+      @include flex.align-self-end;
     }
 
     &-center {
-      @include align-self-center;
+      @include flex.align-self-center;
     }
 
     &-stretch {
-      @include align-self-stretch;
+      @include flex.align-self-stretch;
     }
   }
 }
 
 // Order
 
-@include make-component('order') {
+@include utilities.make-component('order') {
   &-first {
-    @include order-first;
+    @include flex.order-first;
   }
 
   &-last {
-    @include order-last;
+    @include flex.order-last;
   }
 
   &-none {
-    @include order-none;
+    @include flex.order-none;
   }
 
   // make component `.order-$i`
-  @include make-sort-component using ($i) {
-    @include order($i);
+  @include utilities.make-sort-component using ($i) {
+    @include flex.order($i);
   }
 }

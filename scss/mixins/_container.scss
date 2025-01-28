@@ -2,11 +2,14 @@
 //
 // A mixing for fixing an element's width to the current breakpoint.
 
+@use '../utils/variables';
+@use '../mixins/utilities';
+
 @mixin container {
   width: 100%;
 
-  @each $breakpoint, $width in $container-widths {
-    @include make-breakpoint($breakpoint, $breakpoints) {
+  @each $breakpoint, $width in variables.$container-widths {
+    @include utilities.make-breakpoint($breakpoint, variables.$breakpoints) {
       max-width: $width;
     }
   }

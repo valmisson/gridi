@@ -2,7 +2,12 @@
 
 // Get the breakpoint size of the global variable map `$breakpoints`
 
-@function get-breakpoint($name, $breakpoints: $breakpoints) {
+@use 'sass:map';
+@use 'sass:list';
+
+@use '../utils/variables';
+
+@function get-breakpoint($name, $breakpoints: variables.$breakpoints) {
   $breakpoint: map.get($breakpoints, $name);
 
   @return if($breakpoint != 0, $breakpoint, null);
@@ -10,13 +15,13 @@
 
 // Get the names of the breakpoint (xs, sm, md, lg, xl)
 
-@function get-breakpoint-name($name, $breakpoints: $breakpoints) {
+@function get-breakpoint-name($name, $breakpoints: variables.$breakpoints) {
   @return if(get-breakpoint($name, $breakpoints) == null, '', '#{$name}\\:');
 }
 
 // Get spacers size
-@function get-spacer($position, $spacers: $spacers) {
-  @if $position > length($spacers) {
+@function get-spacer($position, $spacers: variables.$spacers) {
+  @if $position > list.length($spacers) {
     @warn "Size #{$position} not found in spacers.";
   }
 

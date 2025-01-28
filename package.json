@@ -12,7 +12,7 @@
     "scss/**/*.scss"
   ],
   "scripts": {
-    "scss": "sass scss/gridi-components.scss dist/gridi.css --style expanded --embed-sources",
+    "scss": "sass scss/gridi.scss dist/gridi.css --style expanded --embed-sources",
     "minify": "cleancss -O1 --format breakWith=lf --with-rebase --source-map --source-map-inline-sources --output dist/ --batch --batch-suffix \".min\" \"dist/*.css\" \"!dist/*.min.css\"",
     "prefix": "postcss --replace dist/gridi.css",
     "build": "run-s scss prefix minify",

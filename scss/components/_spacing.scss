@@ -2,109 +2,112 @@
 //
 // Utilities for controlling gutters
 
+@use '../mixins/utilities';
+@use '../mixins/spacing';
+
 // Gap
 
-@include make-component('gap') {
+@include utilities.make-component('gap') {
   // make component `.gap-$i`
-  @include make-spacing using ($spacer) {
-    @include gap($spacer)
+  @include utilities.make-spacing using ($spacer) {
+    @include spacing.gap($spacer)
   };
 
   // make component `.gap-x-$i`
-  @include make-spacing('-x') using ($spacer) {
-    @include gap-x($spacer);
+  @include utilities.make-spacing('-x') using ($spacer) {
+    @include spacing.gap-x($spacer);
   };
 
   // // make component `.gap-y-$i`
-  @include make-spacing('-y') using ($spacer) {
-    @include gap-y($spacer);
+  @include utilities.make-spacing('-y') using ($spacer) {
+    @include spacing.gap-y($spacer);
   };
 }
 
 // Padding
 
-@include make-component('p') {
+@include utilities.make-component('p') {
   // make component `.p-$i`
-  @include make-spacing using ($spacer) {
-    @include p($spacer);
+  @include utilities.make-spacing using ($spacer) {
+    @include spacing.p($spacer);
   };
 
   // make component `.px-$i`
-  @include make-spacing('x') using ($spacer) {
-    @include px($spacer);
+  @include utilities.make-spacing('x') using ($spacer) {
+    @include spacing.px($spacer);
   };
 
   // make component `.py-$i`
-  @include make-spacing('y') using ($spacer) {
-    @include py($spacer);
+  @include utilities.make-spacing('y') using ($spacer) {
+    @include spacing.py($spacer);
   };
 
   // make component `.pt-$i`
-  @include make-spacing('t') using ($spacer) {
-    @include pt($spacer);
+  @include utilities.make-spacing('t') using ($spacer) {
+    @include spacing.pt($spacer);
   };
 
   // make component `.pb-$i`
-  @include make-spacing('b') using ($spacer) {
-    @include pb($spacer);
+  @include utilities.make-spacing('b') using ($spacer) {
+    @include spacing.pb($spacer);
   };
 
   // make component `.pl-$i`
-  @include make-spacing('l') using ($spacer) {
-    @include pl($spacer);
+  @include utilities.make-spacing('l') using ($spacer) {
+    @include spacing.pl($spacer);
   };
 
   // make component `.pr-$i`
-  @include make-spacing('r') using ($spacer) {
-    @include pr($spacer);
+  @include utilities.make-spacing('r') using ($spacer) {
+    @include spacing.pr($spacer);
   };
 }
 
 // Margin
 
-@include make-component('m') {
+@include utilities.make-component('m') {
   // make component `.m-$i`
-  @include make-spacing using ($spacer) {
-    @include m($spacer);
+  @include utilities.make-spacing using ($spacer) {
+    @include spacing.m($spacer);
   };
 
   // make component `.mx-$i`
-  @include make-spacing('x') using ($spacer) {
-    @include mx($spacer);
+  @include utilities.make-spacing('x') using ($spacer) {
+    @include spacing.mx($spacer);
   };
 
   // // make component `.my-$i`
-  @include make-spacing('y') using ($spacer) {
-    @include my($spacer);
+  @include utilities.make-spacing('y') using ($spacer) {
+    @include spacing.my($spacer);
   };
 
   // make component `.mt-$i`
-  @include make-spacing('t') using ($spacer) {
-    @include mt($spacer);
+  @include utilities.make-spacing('t') using ($spacer) {
+    @include spacing.mt($spacer);
   };
 
   // make component `.mb-$i`
-  @include make-spacing('b') using ($spacer) {
-    @include mb($spacer);
+  @include utilities.make-spacing('b') using ($spacer) {
+    @include spacing.mb($spacer);
   };
 
   // make component `.ml-$i`
-  @include make-spacing('l') using ($spacer) {
-    @include ml($spacer);
+  @include utilities.make-spacing('l') using ($spacer) {
+    @include spacing.ml($spacer);
   };
 
   // make component `.mr-$i`
-  @include make-spacing('r') using ($spacer) {
-    @include mr($spacer);
+  @include utilities.make-spacing('r') using ($spacer) {
+    @include spacing.mr($spacer);
   };
 
   // make component `.mx-auto`
   &#{'x-auto'} {
-    @include mx-auto;
+    @include spacing.mx-auto;
   };
 
   // make component `.my-auto`
   &#{'y-auto'} {
-    @include my-auto;
+    @include spacing.my-auto;
   };
 }

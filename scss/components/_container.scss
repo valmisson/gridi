@@ -2,6 +2,9 @@
 //
 // A component for fixing an element's width to the current breakpoint.
 
-@include make-component('container') {
-  @include container;
+@use '../mixins/utilities';
+@use '../mixins/container';
+
+@include utilities.make-component('container') {
+  @include container.container;
 }

@@ -9,19 +9,10 @@
 *   Licensed under MIT (https://github.com/valmisson/gridi/blob/master/LICENSE)
 */
 
-@use 'sass:map';
-@use 'sass:math';
-@use 'sass:list';
-
-// utils
-@import 'utils/variables';
-@import 'utils/functions';
-
-// mixins
-@import 'mixins/utilities';
-@import 'mixins/component';
-@import 'mixins/container';
-@import 'mixins/display';
-@import 'mixins/flex';
-@import 'mixins/grid';
-@import 'mixins/spacing';
+// components
+@use 'components/base';
+@use 'components/container';
+@use 'components/display';
+@use 'components/flex';
+@use 'components/grid';
+@use 'components/spacing';

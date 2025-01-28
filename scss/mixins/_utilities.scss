@@ -1,9 +1,19 @@
-// Breakpoint
+// Utilities
 //
-// Generates breakpoint viewport sizes and media queries.
+// Generates breakpoint viewport sizes and media queries, components and spacing.
 
-@mixin make-breakpoint ($name, $breakpoints: $breakpoints) {
-  $width: get-breakpoint($name, $breakpoints);
+@use 'sass:map';
+@use 'sass:list';
+
+@use '../utils/variables';
+@use '../utils/functions';
+
+// Make breakpoint
+//
+// Generates breakpoint viewport sizes and media queries
+
+@mixin make-breakpoint ($name, $breakpoints: variables.$breakpoints) {
+  $width: functions.get-breakpoint($name, $breakpoints);
 
   @if $width {
     @media (min-width: $width) {
@@ -15,21 +25,56 @@
   }
 }
 
+// Make Component
+//
+// Generate components
+
+@mixin make-component ($class, $responsive: true) {
+  @if $responsive {
+    @each $breakpoint in map.keys(variables.$breakpoints) {
+      $breakpoint-name: functions.get-breakpoint-name($breakpoint);
+
+      @include make-breakpoint($breakpoint) {
+        .#{$breakpoint-name + $class} {
+          @content;
+        }
+      }
+    }
+  }
+  @else {
+    .#{$class} {
+      @content;
+    }
+  }
+}
+
+// Make Sort Component
+//
+// Generate components sorted
+
+@mixin make-sort-component($start: 1, $end: variables.$columns) {
+  @for $i from $start through $end {
+    &-#{$i} {
+      @content($i);
+    }
+  }
+}
+
 
 // Make Spacing
 //
 // Generates the gutters spacing
 
-@mixin make-spacing ($position: false, $spacers: $spacers) {
+@mixin make-spacing ($position: false, $spacers: variables.$spacers) {
   @if $position {
     &#{$position} {
-      @include make-sort-component($start: 0, $end: length($spacers)) using ($i) {
+      @include make-sort-component($start: 0, $end: list.length($spacers)) using ($i) {
         @content($i);
       }
     }
   }
   @else {
-    @include make-sort-component($start: 0, $end: length($spacers)) using ($i) {
+    @include make-sort-component($start: 0, $end: list.length($spacers)) using ($i) {
       @content($i);
     }
   }
